@@ -25,6 +25,15 @@ The site has about 6,200 files, under the free plan's 20,000-file limit. The das
 
 `site/_headers` sets the security headers Cloudflare Pages applies, including the list of hosts allowed to serve Bible text and audio. Other static hosts work too, but may ignore that file.
 
+## Want sign-in, online saving or AI help?
+
+This version saves everything in the browser on the device you use, with no accounts. If you'd like more, you can extend your own copy, and an AI assistant such as Claude or ChatGPT can help you build and set it up:
+
+- **Sign-in and online saving:** keep your progress in a free Cloudflare D1 database, and protect your copy with Cloudflare Access. Access is free for up to 50 people, and you sign in with a one-time code sent by email. Your progress then shows on every device where you sign in.
+- **AI help:** add a small inbox your AI can leave requests in, like "add Psalm 46:10," "record today's review" or "change my playlist." Your app checks each request before making the change, so your AI can keep the app up to date for you.
+
+These features aren't included here. They're ideas for your own copy. If you put your copy online, keep it behind a sign-in so your progress stays private.
+
 ## Make changes
 
 Edit the files in `site` directly. The main pieces:
