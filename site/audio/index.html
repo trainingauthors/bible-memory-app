@@ -1081,7 +1081,7 @@ for(const type of ['pointerdown','focusin','change','input'])document.addEventLi
 for(const [id,tab] of [['embedded-audio-section','listen'],['embedded-playlists-section','playlists']])$(id).addEventListener('toggle',()=>{if($(id).open&&!embeddedCompact){state.tab=tab;render();}embeddedHeight();});
 state.tab='listen';renderListen();state.tab='playlists';renderLists();state.tab='listen';applyDisplay();updateMini();
 function embeddedContext(compact){if(embeddedCompact===compact)return;embeddedCompact=compact;document.documentElement.dataset.compact=String(compact);$('embedded-audio-section').open=true;if(compact){$('embedded-playlists-section').open=false;state.tab='listen';}else if($('playerArea')&&$('embedded-inline-player')?.contains($('playerArea'))){$('playerArea').remove();modalName='';}render();embeddedHeight();}
-function embeddedEntry(){embeddedContext(false);$('embedded-audio-section').open=true;$('embedded-playlists-section').open=false;enterAudioBible();}
+function embeddedEntry(){embeddedContext(false);$('embedded-audio-section').open=['loading','playing','gap','paused','preview'].includes(player.phase);$('embedded-playlists-section').open=false;enterAudioBible();}
 const embeddedForbiddenKeys=new Set(['__proto__','prototype','constructor']);
 function embeddedPlain(value){return value!==null&&typeof value==='object'&&!Array.isArray(value)&&[Object.prototype,null].includes(Object.getPrototypeOf(value));}
 function embeddedExact(value,keys){return embeddedPlain(value)&&Object.keys(value).length<=keys.length&&Object.keys(value).every(k=>keys.includes(k)&&!embeddedForbiddenKeys.has(k));}
