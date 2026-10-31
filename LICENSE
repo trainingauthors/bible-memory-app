@@ -19,8 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-This license covers the app's code only. Bible text, audio, study notes,
-dictionary articles and cross-reference data keep their own licenses; see
-CREDITS.md. site/vendor/fsrs.js keeps its own MIT license in
-site/vendor/ts-fsrs.LICENSE.
