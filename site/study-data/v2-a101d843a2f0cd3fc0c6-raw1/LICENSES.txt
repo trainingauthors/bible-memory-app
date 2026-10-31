@@ -1,0 +1,19 @@
+# Attribution and license
+
+Tyndale Open Study Notes. Copyright © 2022 by Tyndale House Publishers. Adapted from Tyndale Open Study Notes. The original work by Tyndale House Publishers is available for free at https://www.tyndaleopenresources.com/.
+
+Tyndale Open Bible Dictionary. Copyright © 2023 by Tyndale House Publishers. Adapted from Tyndale Open Bible Dictionary. The original work by Tyndale House Publishers is available for free at https://www.tyndaleopenresources.com/.
+
+Both works are licensed under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0): https://creativecommons.org/licenses/by-sa/4.0/. Share adaptations under the same license and retain attribution.
+
+Changes made in this staging: original XML resources and dictionary articles were transformed into inert JSON paragraph ASTs; record-level source IDs, file/type/release provenance, archive and source-fragment hashes, source-reference evidence, and chapter indexes were added; deterministic gzip copies were generated. Paragraph text is source-exact. Source references are preserved verbatim; known BSB verse mismatches are not corrected. Supplemental pointers are retained as metadata but their targets are not materialized. No generated summary, commentary, or dictionary definition was added.
+
+# Cross-reference source and license
+
+CrossReferences.org, “Cross-References Data,” BSB TSV (tsv/crossreferences_bsb.tsv), pinned at commit d80dee38106c42982bb6c0834ceebb8a517e368a. Licensed under CC BY 4.0. TSK-derived, curated and mapped to BSB anchor wording and versification; this is not a verbatim reproduction of the Treasury of Scripture Knowledge (TSK).
+
+Source commit: `d80dee38106c42982bb6c0834ceebb8a517e368a`
+
+Source file: `tsv/crossreferences_bsb.tsv` (Git blob `92e8e34d6b6fc51c8e8cd6d4f65c44c71f621056`). Data is transformed by partitioning by BSB app-book/chapter and parsing target references for coordinate validation while retaining each original row, anchor, and unmodified target-group string in original source order.
+
+Berean Standard Bible (BSB): Public domain. https://berean.bible/terms.htm

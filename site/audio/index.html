@@ -1,0 +1,1102 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#111923"><meta name="description" content="Listen to the Berean Standard Bible, follow the text, and memorize Scripture with custom playlists, verse repetition and reflection pauses."><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Audio Bible"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>Audio Bible | Berean Standard Bible · Listen & Memorize</title>
+<style>
+:root{color-scheme:dark;--bg:#0b151c;--surface:#17242e;--raised:#21313b;--line:#2b3d49;--text:#f8fbff;--muted:#a0b0bd;--brand-teal:#088ba9;--accent:#36b7d0;--a2:#9cddcb;--red:#36b7d0;--shadow:0 16px 55px #0009}*{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;margin:0;background:var(--bg);color:var(--text);font-size:16px}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--a2);outline-offset:3px}[hidden]{display:none!important}.shell{max-width:650px;margin:0 auto;padding:19px 19px 160px;min-height:100vh}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:6px 0 18px;flex-wrap:wrap}.brand{font-size:13px;font-weight:800;letter-spacing:.12em;color:var(--a2);text-transform:uppercase}.voicePicker{display:flex;align-items:center;gap:6px}.voicePicker label{font-size:11px;font-weight:750;color:var(--muted)}.voicePicker select{background:var(--surface);color:var(--text);border:1px solid #536b78;border-radius:10px;padding:8px 6px;max-width:148px;font-size:13px;font-weight:720;min-height:40px}.voicePreview{background:var(--raised);border:1px solid #536b78;color:var(--a2);border-radius:50%;width:39px;height:39px;flex-shrink:0;font-size:15px}.voicebtn{border:1px solid var(--line);background:var(--surface);border-radius:26px;color:#ecf6f6;font-size:13px;font-weight:700;padding:10px 12px}@media(max-width:390px){.brand{font-size:11px}.voicePicker label{display:none}.voicePicker select{max-width:143px}}.tag{font-weight:750;letter-spacing:.1em;color:var(--accent);text-transform:uppercase;font-size:11px}h1{font-size:clamp(32px,8.3vw,42px);letter-spacing:-.046em;margin:10px 0 10px;line-height:1.12}h2{font-size:20px;letter-spacing:-.026em;margin:0}p{color:var(--muted);line-height:1.5}.sub{font-size:14px;margin:0 0 24px}.hero{border-radius:23px;background:linear-gradient(135deg,#324b54,#182a36 66%);padding:25px 22px;margin:22px 0 20px}.hero .eyebrow{color:#a9d8d4;font-size:12px;letter-spacing:.11em;text-transform:uppercase;font-weight:780}.hero h2{font-size:29px;margin:9px 0}.hero p{color:#d1e2e2;font-size:14px;margin:0 0 22px}.btn{border-radius:13px;padding:14px 18px;font-size:15px;font-weight:740;border:1px solid var(--line);color:var(--text);background:#233642;min-height:49px}.btn.primary{background:var(--brand-teal);color:#fff;border:0}.btn.full{display:flex;width:100%;align-items:center;justify-content:center;gap:9px}.btn.small{font-size:13px;min-height:40px;padding:9px 13px}.btn.ghost{background:none}.split{display:flex;gap:10px}.split .btn{flex:1}.selectRow{display:flex;gap:10px;margin:18px 0 13px}.selectRow select,.formField input,.formField select{min-width:0;color:var(--text);background:var(--raised);border:1px solid #47606a;border-radius:12px;padding:12px;min-height:48px}.selectRow select:first-child{flex:3}.selectRow select:last-child{flex:1}.controlsline{display:flex;gap:10px;justify-content:space-between;align-items:center;margin:22px 0 12px}.mutebtn{background:none;border:0;color:var(--a2);padding:8px 3px;font-size:13px;font-weight:710}.rule{border-top:1px solid var(--line)}.verselist{margin-top:7px}.verserow{padding:14px 2px;border-bottom:1px solid #243741;display:flex;align-items:flex-start;gap:13px}.verserow.selected{background:#213b42;border-radius:10px;padding:14px 10px}.versernum{background:none;border:0;color:var(--accent);font-size:16px;font-weight:750;min-width:29px}.versebody{font-size:15px;line-height:1.55;color:#e6eded;flex:1}.pill{border:1px solid #4c6871;background:#21363e;border-radius:20px;padding:9px 12px;font-size:13px;color:#eaf8f4;font-weight:650}.pill.on{background:var(--brand-teal);border-color:var(--brand-teal);color:#fff}.sectionrow{display:flex;justify-content:space-between;align-items:center;margin:25px 0 11px}.playlistcard{width:100%;background:var(--surface);border:1px solid #31434c;border-radius:18px;padding:18px;text-align:left;color:var(--text);margin:0 0 10px}.playlistcard.active{border-color:#a9b9bc}.playlistcard h3{font-size:17px;letter-spacing:-.02em;margin:0 0 4px}.playlistcard small,.track small{font-size:13px;color:var(--muted)}.track{display:flex;align-items:center;gap:12px;min-height:73px;border-bottom:1px solid #293943}.trackmain{flex:1;min-width:0;background:none;border:0;color:var(--text);display:flex;text-align:left;flex-direction:column;gap:4px;padding:14px 0}.trackname{font-weight:720;font-size:15px}.number{font-size:13px;color:var(--muted);width:20px;text-align:center}.iconbtn{height:42px;min-width:42px;border:0;background:none;color:var(--muted);font-size:22px}.add{border:1px dashed #56737a;background:#1c303a;color:var(--a2);border-radius:13px;display:block;width:100%;padding:16px;font-weight:780;margin-top:16px}.back{color:var(--a2);background:none;border:0;font-weight:700;font-size:14px;margin-bottom:18px}.floating{position:fixed;bottom:calc(73px + env(safe-area-inset-bottom));left:max(12px,calc((100vw - 615px)/2));right:max(12px,calc((100vw - 615px)/2));border-radius:16px;border:1px solid #506674;background:#243744;box-shadow:var(--shadow);padding:10px 12px;display:flex;gap:12px;align-items:center;z-index:5}.floatOpen{background:none;color:var(--text);border:0;min-width:0;flex:1;text-align:left}.floatOpen strong{display:block;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.floatOpen small{display:block;color:#bdcdd3;font-size:12px;margin-top:3px}.floatplay{border:0;background:var(--brand-teal);color:#fff;border-radius:50%;height:43px;width:43px;font-size:20px}.tabs{position:fixed;bottom:0;left:0;right:0;border-top:1px solid #31424f;background:#101d26;display:flex;justify-content:center;gap:min(15vw,105px);padding:10px 16px calc(9px + env(safe-area-inset-bottom));z-index:4}.tab{min-width:110px;border:0;background:none;color:#a8b9c7;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:12px;padding:5px}.tab.on{color:var(--accent);font-weight:770}.tab span{font-size:21px}.veil{position:fixed;inset:0;background:#000b;z-index:10;display:flex;align-items:flex-end;justify-content:center}.sheet{width:min(650px,100%);background:#172630;border:1px solid #3b515d;border-bottom:0;border-radius:25px 25px 0 0;max-height:93dvh;overflow-y:auto;padding:20px 21px calc(24px + env(safe-area-inset-bottom))}.sheethead{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:23px}.sheethead h2{font-size:23px}.x{background:#263c48;border:0;border-radius:100%;height:37px;width:37px;font-size:22px;color:#d5e3e5}.formField{margin:17px 0}.formField label{display:block;color:#c6d5d9;font-size:13px;margin-bottom:9px;font-weight:700}.formField input,.formField select{width:100%}.formField small{color:var(--muted);display:block;margin-top:7px}.voiceOption{display:flex;align-items:center;gap:10px;border:1px solid #344c57;padding:14px 11px;border-radius:14px;margin:10px 0}.voiceOption.active{border-color:var(--accent)}.voiceName{flex:1;min-width:0}.voiceName strong{display:block;font-size:15px}.voiceName small{display:block;color:var(--muted);font-size:12px;margin-top:4px}.sample{background:#2e4650;border:1px solid #58717d;color:#e0f5ee;border-radius:30px;padding:10px 14px;white-space:nowrap;font-size:13px}.choose{background:none;border:0;color:var(--accent);font-weight:730;padding:8px}.setting{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:12px 0}.setting span{font-size:14px;font-weight:650}.setting select{background:#293d49;color:#fff;border:1px solid #496472;border-radius:9px;padding:9px 10px;width:min(58%,215px)}.playerface{background:linear-gradient(155deg,#2b4a53,#1d303d);height:168px;width:168px;border-radius:21px;display:flex;flex-direction:column;gap:3px;align-items:center;justify-content:center;margin:9px auto 26px;box-shadow:0 15px 45px #0005}.playerface big{font-size:49px;color:var(--accent);font-weight:400}.playerface span{font-size:12px;color:#d5e9e6;letter-spacing:.15em}.cent{text-align:center}.nowTitle{font-size:26px;margin:7px 0 4px;letter-spacing:-.035em}.nowSource{font-size:13px;color:var(--muted)}.progress{width:100%;height:6px;background:#3f555f;border-radius:30px;margin:26px 0 9px;overflow:hidden}.progressfill{height:100%;width:0;background:var(--accent)}.timebar{display:flex;justify-content:space-between;color:var(--muted);font-size:12px}.transport{display:flex;justify-content:center;align-items:center;gap:35px;margin:22px 0 16px}.transport button{border:0;background:none;color:#eaf5f3;font-size:28px;min-height:48px;min-width:45px}.transport .mainTransport{width:69px;height:69px;border-radius:50%;background:var(--brand-teal);color:#fff;font-size:27px}.quickopts{display:flex;justify-content:center;gap:9px;margin:23px 0 11px;flex-wrap:wrap}.hint{color:var(--muted);font-size:13px;line-height:1.5}.warn{color:#ffe2cf;background:#433b38;border-radius:12px;padding:12px;font-size:13px;margin:12px 0}.toast{background:#26464b;color:#dffaf3;padding:11px 13px;border-radius:10px;font-size:13px;margin-top:13px}.empty{border:1px dashed #3c555e;border-radius:14px;padding:20px;color:#a9bfc9;text-align:center}.visuallyhidden{position:absolute;left:-9999px}@media(min-width:700px){.veil{align-items:center;padding:20px}.sheet{border:1px solid #425b67;border-radius:24px;max-height:85vh;padding-bottom:23px}}
+
+/* Reading appearance */
+:root {--reader-size:22px;--reader-line:1.76}
+.readingToolbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin:14px 0 12px}
+.modeControl{display:flex;gap:3px;align-items:center;background:var(--surface);padding:4px;border-radius:12px;border:1px solid var(--line)}
+.modeControl button{border:0;background:transparent;color:var(--muted);font-size:12px;min-height:36px;border-radius:9px;padding:7px 9px;font-weight:650}
+.modeControl button.active{background:var(--raised);color:var(--text);box-shadow:0 1px 3px #0002}
+.fontControl{display:flex;align-items:center;gap:5px}
+.fontControl button,.themeSwitch{border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:10px;min-width:37px;min-height:37px;padding:7px 9px;font-size:15px;font-weight:700}
+.themeSwitch{font-size:19px;min-width:41px;min-height:41px}
+.versebody{font-size:var(--reader-size);line-height:var(--reader-line)}
+.verserow.activeAudio{background:rgba(54,183,208,.18);border-radius:10px;padding:14px 10px;outline:1px solid rgba(54,183,208,.42);scroll-margin-block:30vh}
+.verserow.activeAudio .versernum{color:var(--accent)}
+.versebody.emptyScript{color:var(--muted);font-style:italic}
+.nowScripture{background:var(--raised);border-radius:14px;padding:16px;margin:14px 0 18px;max-height:30vh;overflow:auto;font-size:var(--reader-size);line-height:var(--reader-line);text-align:left}
+.nowScripture .line{display:block;padding:3px 0;border-radius:8px}
+.nowScripture .line.playingVerse{background:rgba(54,183,208,.2);color:var(--text);outline:1px solid rgba(54,183,208,.35)}
+.nowScripture .verseNum{font-size:12px;color:var(--accent);font-weight:800;margin-right:8px}
+.nowScripture.muteText{text-align:center;font-size:14px;color:var(--muted)}
+.playerSettings{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:13px 0}
+.speedChip{background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:14px;padding:8px 12px;font-size:13px;font-weight:720}
+/* Light theme overrides; no additional library or network calls. */
+html[data-theme=light]{color-scheme:light;--bg:#fbfaf7;--surface:#f1f5f3;--raised:#fff;--line:#d9e1de;--text:#182a32;--muted:#566872;--brand-teal:#088ba9;--accent:#086d84;--a2:#088ba9;--shadow:0 16px 50px #152b331b}
+html[data-theme=light] body{background:var(--bg);color:var(--text)}
+html[data-theme=light] .brand span{color:#52666f!important}
+html[data-theme=light] .hero{background:linear-gradient(135deg,#dbefe8,#d9e4e9 90%)}
+html[data-theme=light] .hero .eyebrow{color:#365c62}
+html[data-theme=light] .hero p{color:#536671}
+html[data-theme=light] .btn{background:#edf3f1;color:var(--text);border-color:var(--line)}
+html[data-theme=light] .btn.primary, html[data-theme=light] .floatplay{background:#088ba9;color:white;border-color:#088ba9}
+html[data-theme=light] .selectRow select,html[data-theme=light] .voicePicker select,html[data-theme=light] .formField input,html[data-theme=light] .formField select{background:white;color:var(--text);border-color:#bacdc9}
+html[data-theme=light] .voicePreview,html[data-theme=light] .pill{background:#f0f5f2;color:var(--text);border-color:#c8d4d0}
+html[data-theme=light] .pill.on{background:#088ba9;color:white}
+html[data-theme=light] .verserow{border-bottom-color:#e4ebe7}
+html[data-theme=light] .versebody{color:var(--text)}
+html[data-theme=light] .verserow.activeAudio{background:#d7eff6;outline-color:#8dccdd}
+html[data-theme=light] .verserow.activeAudio .versernum{color:#086d84}
+html[data-theme=light] .playlistcard{background:#f4f7f5;border-color:#d7e3df;color:var(--text)}
+html[data-theme=light] .track{border-bottom-color:#e0e7e3}
+html[data-theme=light] .trackmain{color:var(--text)}
+html[data-theme=light] .add{background:#edf7f3;border-color:#a8cfc2}
+html[data-theme=light] .floating{background:#f8fcf9;border-color:#cbdad5}
+html[data-theme=light] .floatOpen{color:var(--text)}
+html[data-theme=light] .floatOpen small{color:#607179}
+html[data-theme=light] .tabs{background:#f5f8f6;border-top-color:#d0ded9}
+html[data-theme=light] .tab{color:#617b82}
+html[data-theme=light] .tab.on{color:#086d84}
+html[data-theme=light] .sheet{background:#f8fbf9;border-color:#d0ded9}
+html[data-theme=light] .x{background:#e5efeb;color:var(--text)}
+html[data-theme=light] .number,html[data-theme=light] .nowSource{color:#61767a}
+html[data-theme=light] .nowScripture .line.playingVerse{background:#d7eff6}
+html[data-theme=light] .modeControl button.active{background:#fff}
+.noTextState{min-height:180px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;color:var(--muted);text-align:center;padding:24px 12px}
+.noTextState .noTextIcon{font-size:29px;color:var(--accent)}
+.noTextState p{margin:0;font-size:14px;line-height:1.5}
+#readerContent .verserow.activeAudio{transition:background-color .18s,outline-color .18s}
+@media(prefers-reduced-motion:reduce){#readerContent .verserow.activeAudio{transition:none}}
+
+/* Compact, accessible player. Controls stay visible; only Scripture scrolls. */
+.playerSummary{display:flex;align-items:center;gap:12px;min-width:0;margin:0 0 2px}
+.playerSummary .playerface{flex:0 0 65px;width:65px;height:65px;border-radius:12px;margin:0;gap:0;box-shadow:none}
+.playerSummary .playerface big{font-size:19px;line-height:1.15}
+.playerSummary .playerface span{font-size:5px;letter-spacing:.08em}
+.playerSummary .cent{min-width:0;text-align:left;flex:1}
+.playerSummary .nowTitle{font-size:clamp(18px,5vw,23px);line-height:1.17;margin:0 0 3px}
+.playerSummary .nowSource{font-size:12px;line-height:1.3}
+.playerSummary #nowPhase{margin:5px 0 0;font-size:12px!important}
+#playerArea{display:flex;flex-direction:column;flex:1;min-height:0}
+#playerArea .progress{flex-shrink:0;margin:9px 0 5px}
+#playerArea .timebar{flex-shrink:0}
+#nowReadingArea{display:flex;flex-direction:column;min-height:0;flex:1}
+#nowReadingArea .readingToolbar{flex-shrink:0;margin:8px 0 5px}
+#nowReadingArea .nowScripture{flex:1;min-height:0;max-height:none;margin:5px 0 6px;padding:13px 13px 16px;scroll-padding-top:12px;overscroll-behavior:contain}
+#playerDock{flex-shrink:0;border-top:1px solid var(--line);padding-top:5px}
+#playerDock .transport{margin:2px 0 3px;gap:clamp(12px,8vw,44px)}
+#playerDock .transport .mainTransport{height:54px;width:54px;font-size:23px}
+#playerDock .playerSettings{margin:3px 0}
+#playerDock .quickopts{margin:6px 0 2px;gap:6px;flex-wrap:nowrap}
+#playerDock .quickopts .pill{padding:8px 10px;flex:1;min-width:0;white-space:nowrap;font-size:11px}
+#playerArea #nowError{flex-shrink:0;max-height:72px;overflow:auto;margin:4px 0}
+.verserow.activeAudio{scroll-margin-top:10px;scroll-margin-bottom:10px}
+.backupRow{display:flex;align-items:center;justify-content:center;gap:22px;margin:18px 0 4px}
+.backupRow .mutebtn{min-height:42px}
+.backupHint{font-size:12px;line-height:1.5;text-align:center;margin:0 0 20px}
+.backupStatus{font-size:13px;line-height:1.55;text-align:center;color:var(--muted);margin:12px 0 3px}
+.backupStatus.needed{color:var(--accent);font-weight:650}
+html[data-theme=light] #playerDock{border-color:var(--line)}
+@media(max-width:699px){
+ .sheet:has(#playerArea){display:flex;flex-direction:column;height:100dvh;max-height:100dvh;overflow:hidden;padding:12px 16px calc(9px + env(safe-area-inset-bottom));border-radius:18px 18px 0 0}
+ .sheet:has(#playerArea) .sheethead{flex-shrink:0;margin-bottom:10px}
+ .sheet:has(#playerArea) .sheethead h2{font-size:20px}
+ .sheet:has(#playerArea) .sheethead .x{height:36px;width:36px}
+}
+@media(min-width:700px){
+ .sheet:has(#playerArea){display:flex;flex-direction:column;min-height: min(680px,85dvh);height:85dvh;overflow:hidden}
+}
+.ui-icon{display:inline-block;vertical-align:-.17em;flex-shrink:0}
+.btn,.mutebtn,.pill,.sample,.add,.speedChip{align-items:center}
+.btn .ui-icon,.mutebtn .ui-icon,.pill .ui-icon,.sample .ui-icon,.add .ui-icon{margin-right:5px}
+.tab .ui-icon{display:block;margin:0 auto 3px;color:currentColor}
+.playerface .ui-icon{color:var(--accent)}
+.themeSwitch .ui-icon{vertical-align:middle;color:var(--accent)}
+.transport button .ui-icon{vertical-align:middle}
+.quickopts .pill .ui-icon{color:var(--accent)}
+#floatPlay .ui-icon{vertical-align:middle}
+
+.featuredHeading{margin:20px 0 10px}
+.featuredEntry{display:flex;align-items:stretch;gap:8px;margin:0 0 9px}
+.featuredEntry .featuredCard{flex:1;min-width:0;margin:0}
+.featuredAdd{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-width:60px;padding:10px 8px;background:var(--surface);border:1px solid var(--line);border-radius:14px;color:var(--accent);font-size:12px;font-weight:750}
+.featuredAdd:hover,.featuredAdd:focus-visible{border-color:var(--accent)}
+
+.featuredCard{width:100%;text-align:left;display:flex;align-items:center;gap:13px;border:1px solid var(--line);background:var(--surface);border-radius:15px;padding:14px 13px;margin:0 0 8px;color:var(--text);min-height:72px}
+.featuredCard .featuredIcon{display:grid;place-items:center;width:40px;height:40px;flex-shrink:0;background:var(--raised);border-radius:12px;color:var(--accent)}
+.featuredCard strong{display:block;font-size:15px;margin-bottom:3px}
+.featuredCard small{display:block;color:var(--muted);font-size:12px;line-height:1.45}
+.featuredCard .featureNext{margin-left:auto;color:var(--muted)}
+.featuredList{overflow:auto;max-height:36dvh;border:1px solid var(--line);border-radius:12px;background:var(--raised);padding:5px 12px;margin:14px 0}
+.featuredVerse{padding:10px 3px;border-bottom:1px solid var(--line);display:flex;gap:11px;align-items:center;font-size:14px}
+.featuredVerse:last-child{border:0}
+.featuredVerse .featuredNumber{min-width:26px;color:var(--muted);font-size:12px}
+.featuredSource{font-size:12px;color:var(--muted);margin-top:12px}
+.featuredSource a{color:var(--accent)}
+
+/* Collapsible lists. The user's own playlists are the primary surface on both sites. */
+.playlistSection{margin:19px 0 16px}
+.sectionToggle{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 14px;min-height:50px;border-radius:13px;background:var(--surface);border:1px solid var(--line);color:var(--text);text-align:left;font:inherit;cursor:pointer}
+.sectionToggle .sectionTitle{font-size:19px;font-weight:750;letter-spacing:-.02em}
+.sectionToggle .sectionRight{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:12px}
+.sectionToggle .sectionChevron{display:inline-flex;transition:transform .2s ease}
+.sectionToggle[aria-expanded="true"] .sectionChevron{transform:rotate(180deg)}
+.sectionContent{padding:14px 2px 1px}
+.sectionContent[hidden]{display:none!important}
+.sectionInfo{color:var(--muted);font-size:12px;line-height:1.5;margin:0 0 14px}
+.sectionContent .backupRow{margin-top:22px}
+.sectionContent .backupHint{margin-bottom:0}
+.personalPresetCard{border-color:var(--accent);background:var(--surface)}
+.personalPresetCard .presetLabel{color:var(--accent);font-size:12px;font-weight:650}
+@media(prefers-reduced-motion:reduce){.sectionChevron{transition:none}}
+
+
+/* Compact, source-only Philippians study view */
+.studyRoot{margin:3px 0 13px}
+.studyRoot>summary{display:flex;align-items:center;gap:8px;min-height:44px;list-style:none;cursor:pointer;color:var(--muted);font-size:13px;padding:5px 3px}
+.studyRoot>summary::-webkit-details-marker{display:none}
+.studyRoot>summary svg{width:15px;height:15px}
+.studyRoot .studyArrow{margin-left:auto}
+.studyRoot[open] .studyArrow{transform:rotate(180deg)}
+.studyBox{border:1px solid var(--line);background:var(--surface);border-radius:14px;padding:10px}
+.studyTabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;padding:3px;background:var(--raised);border-radius:11px}
+.studyTabs button{appearance:none;min-width:0;padding:10px 6px;min-height:44px;background:transparent;border:0;color:var(--muted);border-radius:8px;font:inherit;font-size:14px;line-height:1.3;font-weight:600;cursor:pointer}
+@media(max-width:480px){.studyTabs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.studyTabs button[aria-selected="true"]{background:var(--surface);color:var(--text);box-shadow:0 1px 6px #0002}
+.studyPanel{padding:13px 3px 3px;font-size:var(--study-font-size,18px);line-height:1.65}
+.studyPanelHeader{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 8px}
+.studyPanelHeader strong{font-size:1em}
+.studySrc{font-size:11px;color:var(--muted);text-align:right}
+.studyScroll{max-height:265px;overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding:1px 5px 4px 0}
+.studyScroll p{margin:0 0 1em;white-space:pre-line;line-height:1.65}
+.studyScroll p:last-child{margin:0}
+.studyEntry{border-top:1px solid var(--line);padding:10px 0}
+.studyEntry:first-child{border-top:0;padding-top:0}
+.studyEntry h3{font-size:1em;color:var(--accent);margin:0 0 .65em;line-height:1.4}
+.studyEntry p{margin:0 0 1em;white-space:pre-line;line-height:1.65}
+.studyEntry p:last-child{margin-bottom:0}
+.studyEntry h4{font-size:1em;line-height:1.4;margin:1.2em 0 .6em;color:var(--text)}
+.studyEntry h4:first-child{margin-top:0}
+.studyFontControls{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:10px 0 0;color:var(--muted);font-size:13px}
+.studyFontButtons{display:flex;align-items:center;gap:6px}
+.studyFontButtons button{min-width:44px;min-height:44px;border:1px solid var(--line);border-radius:9px;background:var(--raised);color:var(--text);font-size:17px;font-weight:700}
+.studyFontButtons button:disabled{opacity:.4;cursor:default}
+.studyFontButtons output{min-width:37px;text-align:center;font-size:12px}
+.studyPassage{font-size:var(--study-font-size,18px);line-height:1.65;margin-top:1em}
+.studyPassage p{font-size:inherit;line-height:inherit;margin:0 0 1em;color:var(--text)}
+.studyTopicHeading{font-size:1em;line-height:1.4;margin:1.1em 0 .5em;color:var(--text)}
+.studyTopicHeading:first-child{margin-top:0}
+.studyNoteLabel{color:var(--muted);font-size:12px;margin-bottom:6px}
+.studySelect{width:100%;background:var(--raised);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px;margin:4px 0 10px}
+.studyReference{display:flex;justify-content:space-between;gap:12px;align-items:center;background:transparent;color:var(--text);border:0;border-bottom:1px solid var(--line);width:100%;min-height:39px;padding:8px 0;text-align:left;font:inherit;cursor:pointer}
+.studyReference:last-child{border:0}
+.studyAnchor{font-size:.9em;font-weight:650;color:var(--muted);padding-top:12px}
+.studyFine{margin:8px 0 0;color:var(--muted);font-size:12px;line-height:1.45}
+.studyFine a{color:var(--accent)}
+.studyTopic{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:48px;padding:12px 2px;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--text);font:inherit;line-height:1.5;text-align:left;overflow-wrap:anywhere}
+.studyTopic:last-child{border-bottom:0}
+.studyTopic span:last-child{flex-shrink:0;color:var(--accent)}
+.studyBackTopics{display:block;min-height:44px;padding:8px 0 12px;border:0;background:transparent;color:var(--accent);font:inherit;font-weight:650;text-align:left}
+.studyCreditButton{border:0;padding:5px 2px;background:transparent;color:var(--muted);font-size:11px;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+
+
+.passage-range{margin:16px 0;padding:14px;border:1px solid var(--line);border-radius:14px}.passage-range label,.selectRow label{display:flex;flex-direction:column;gap:8px;font-size:15px}.selectRow label select{width:100%}#range-fields:not([hidden]){display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}#range-message{font-size:14px;line-height:1.5;margin-bottom:0}.passage-range select{min-height:44px}
+
+.embedded-section{margin:12px 0;border:1px solid var(--line);border-radius:14px;padding:0 15px}.embedded-section>summary{padding:16px 0;font-size:19px;font-weight:750;cursor:pointer}.embedded-section>div{padding-bottom:15px}.shell{max-width:none;min-height:0;padding:0 0 12px}.top,.tabs,.floating,footer{display:none!important}.veil{z-index:30}.sheet{max-height:92dvh}
+.playback-options{margin:12px 0;border:1px solid var(--line);border-radius:12px;padding:0 12px}.playback-options>summary{min-height:46px;display:list-item;align-content:center;cursor:pointer;font-weight:750}.playback-options label{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:12px 0;font-size:14px}.playback-options select{min-height:44px;max-width:65%;min-width:0;padding:8px;color:var(--text);background:var(--raised);border:1px solid var(--line);border-radius:9px}.sleep-status{font-size:13px;line-height:1.5;margin:8px 0;color:var(--a2)}.sleep-status button{margin-left:8px;min-height:44px}.playback-help{font-size:12px}.sheet:has(#playerArea){display:block;height:auto;min-height:0;max-height:92dvh;overflow-y:auto}.sheet:has(#playerArea) #nowReadingArea .nowScripture{height:clamp(150px,28dvh,320px);max-height:32dvh;overflow-y:auto;flex:none}#playerDock{position:static}#playerDock .playerSettings,#playerDock .quickopts{display:none!important}#playerDock .transport{position:sticky;top:0;background:var(--surface);z-index:2;padding:6px 0}
+html[data-compact=true] #embedded-playlists-section,html[data-compact=true] #embedded-audio-section>summary{display:none!important}html[data-compact=true] #embedded-audio-section{border:0;padding:0;margin:0}#embedded-inline-player #playerArea{display:block}#embedded-inline-player #nowReadingArea .nowScripture{height:clamp(150px,28dvh,320px);max-height:32dvh;overflow-y:auto;flex:none}#embedded-inline-player #nowReadingArea{display:block}#embedded-inline-player .playerSummary .playerface{display:none}html[data-compact=true] .veil{position:static;background:none;display:block;padding:0;margin:10px 0}html[data-compact=true] .veil[hidden]{display:none!important}html[data-compact=true] .sheet{width:100%;max-height:none;overflow:visible;border:1px solid var(--line);border-radius:12px;padding:14px}html[data-compact=true] .studyScroll{max-height:none;overflow:visible}
+</style></head><body>
+<div class="shell"><div hidden aria-hidden="true"><button id="themeSwitch"></button><select id="voiceSelect"><option value="hays">Barry Hays</option></select><button id="voiceTop"></button></div><main id="view"></main></div>
+<div id="float" class="floating" hidden><button id="floatOpen" class="floatOpen" type="button"><strong id="floatTitle">Philippians 2</strong><small id="floatSub">Ready to play</small></button><button id="floatPlay" class="floatplay" type="button" aria-label="Play or pause"><svg class="ui-icon" viewBox="0 0 24 24" width="21" height="21" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="m8 5 11 7-11 7z"/></svg></button></div>
+<nav hidden class="tabs" aria-label="Main navigation"><button id="tabListen" class="tab on"><span><svg class="ui-icon" viewBox="0 0 24 24" width="21" height="21" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg></span>Listen</button><button id="tabLists" class="tab"><span><svg class="ui-icon" viewBox="0 0 24 24" width="21" height="21" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13M9 9l12-2"/><ellipse cx="6" cy="18" rx="3" ry="2"/><ellipse cx="18" cy="16" rx="3" ry="2"/></svg></span>Playlists</button></nav>
+<div id="veil" class="veil" hidden><section id="sheet" class="sheet" role="dialog" aria-modal="true" aria-label="Options"></section></div>
+<audio id="audio" playsinline preload="metadata"></audio>
+<script>
+'use strict';
+
+const ICON_PATHS={
+  sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/>',
+  moon:'<path d="M20.9 13a9 9 0 0 1-9.9-9.9A9 9 0 1 0 20.9 13Z"/>',
+  headphones:'<path d="M3 14v-3a9 9 0 0 1 18 0v3"/><path d="M3 13h3v7H5a2 2 0 0 1-2-2v-5Zm18 0h-3v7h1a2 2 0 0 0 2-2v-5Z"/>',
+  list:'<path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/>',
+  play:'<path d="m8 5 11 7-11 7z"/>',
+  pause:'<path d="M9 5v14M15 5v14"/>',
+  'skip-back':'<path d="M5 5v14m14-14L8 12l11 7z"/>',
+  'skip-next':'<path d="M19 5v14M5 5l11 7-11 7z"/>',
+  repeat:'<path d="m17 2 4 4-4 4M3 11V8a2 2 0 0 1 2-2h16M7 22l-4-4 4-4m14-1v3a2 2 0 0 1-2 2H3"/>',
+  timer:'<circle cx="12" cy="13" r="8"/><path d="M12 9v5l3 2M9 2h6"/>',
+  mic:'<rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5m-4 0h8"/>',
+  settings:'<path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/><path d="m19.4 15 .1.1 1.2 1.8-2 2-1.8-1.2-.2.1-2.2.5-.5 2.3h-3l-.5-2.3-2.2-.5-.2-.1-1.8 1.2-2-2 1.2-1.8-.1-.2-.5-2.1-2.3-.5v-3l2.3-.5.5-2.1.1-.2-1.2-1.8 2-2 1.8 1.2.2-.1 2.2-.5.5-2.3h3l.5 2.3 2.2.5.2.1 1.8-1.2 2 2-1.2 1.8.1.2.5 2.1 2.3.5v3l-2.3.5-.5 2.1Z"/>',
+  plus:'<path d="M12 5v14M5 12h14"/>',
+  download:'<path d="M12 3v12m-4-4 4 4 4-4M4 17v3h16v-3"/>',
+  upload:'<path d="M12 16V4m-4 4 4-4 4 4M4 17v3h16v-3"/>',
+  more:'<circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/>',
+  book:'<path d="M12 7c-3-2-6-2-9-1v13c3-1 6-1 9 1 3-2 6-2 9-1V6c-3-1-6-1-9 1Zm0 0v13"/>',
+  check:'<path d="m5 12 4 4L19 6"/>',
+  chevron:'<path d="m6 9 6 6 6-6"/>',
+  music:'<path d="M9 18V5l12-2v13M9 9l12-2"/><ellipse cx="6" cy="18" rx="3" ry="2"/><ellipse cx="18" cy="16" rx="3" ry="2"/>'
+};
+function uiIcon(name,size=18){
+ return '<svg class="ui-icon" viewBox="0 0 24 24" width="'+size+'" height="'+size+'" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round">'+(ICON_PATHS[name]||ICON_PATHS.book)+'</svg>';
+}
+
+const BOOKS=[['GEN','Genesis',50],['EXO','Exodus',40],['LEV','Leviticus',27],['NUM','Numbers',36],['DEU','Deuteronomy',34],['JOS','Joshua',24],['JDG','Judges',21],['RUT','Ruth',4],['1SA','1 Samuel',31],['2SA','2 Samuel',24],['1KI','1 Kings',22],['2KI','2 Kings',25],['1CH','1 Chronicles',29],['2CH','2 Chronicles',36],['EZR','Ezra',10],['NEH','Nehemiah',13],['EST','Esther',10],['JOB','Job',42],['PSA','Psalms',150],['PRO','Proverbs',31],['ECC','Ecclesiastes',12],['SNG','Song of Songs',8],['ISA','Isaiah',66],['JER','Jeremiah',52],['LAM','Lamentations',5],['EZK','Ezekiel',48],['DAN','Daniel',12],['HOS','Hosea',14],['JOL','Joel',3],['AMO','Amos',9],['OBA','Obadiah',1],['JON','Jonah',4],['MIC','Micah',7],['NAM','Nahum',3],['HAB','Habakkuk',3],['ZEP','Zephaniah',3],['HAG','Haggai',2],['ZEC','Zechariah',14],['MAL','Malachi',4],['MAT','Matthew',28],['MRK','Mark',16],['LUK','Luke',24],['JHN','John',21],['ACT','Acts',28],['ROM','Romans',16],['1CO','1 Corinthians',16],['2CO','2 Corinthians',13],['GAL','Galatians',6],['EPH','Ephesians',6],['PHP','Philippians',4],['COL','Colossians',4],['1TH','1 Thessalonians',5],['2TH','2 Thessalonians',3],['1TI','1 Timothy',6],['2TI','2 Timothy',4],['TTS','Titus',3],['PHM','Philemon',1],['HEB','Hebrews',13],['JAS','James',5],['1PE','1 Peter',5],['2PE','2 Peter',3],['1JN','1 John',5],['2JN','2 John',1],['3JN','3 John',1],['JUD','Jude',1],['REV','Revelation',22]];
+const NAMES={gilbert:'Jordan Scott Gilbert',hays:'Barry Hays',souer:'Bob Souer'};
+
+// Shared, read-only featured collection definitions. People copy a collection before editing it.
+// Bible Memory Goal attribution appears on each corresponding playlist, not in the global footer.
+const FEATURED_DATA=[{"id":"prayers","title":"Prayers from Scripture","description":"15 passages to listen, memorize and pray","source":"","refs":["Matthew 6:9-13","Philippians 1:9-11","Ephesians 1:17-19","Ephesians 3:14-21","Colossians 1:9-12","Psalm 51:10-12","Psalm 139:23-24","Psalm 86:11-13","Psalm 90:12-17","Numbers 6:24-26","1 Thessalonians 3:12-13","2 Thessalonians 1:11-12","Romans 15:5-6","Romans 15:13","Jude 1:24-25"]},{"id":"promises","title":"Promises of God","description":"17 passages for faith, hope and encouragement","source":"","refs":["Psalm 23:1-6","Psalm 46:1-3","Psalm 34:17-19","Psalm 121:1-8","Isaiah 41:10","Isaiah 40:31","Joshua 1:9","John 14:27","Matthew 11:28-30","Romans 8:28-29","Romans 8:38-39","Philippians 4:6-7","1 Peter 5:7","2 Corinthians 12:9-10","Lamentations 3:22-23","Hebrews 13:5-6","John 10:27-29"]}];
+// An unlisted address is not authenticated access. Keep personal presets out of the public UI.
+const FEATURED=FEATURED_DATA.map(d=>({
+ ...d,
+ items:d.refs.map((source,i)=>{
+  const m=/^(.+) (\d+):(\d+)(?:-(\d+))?$/.exec(source);
+  if(!m)throw Error('Invalid featured Scripture reference '+source);
+  const found=BOOKS.find(b=>b[1].toLowerCase()===m[1].toLowerCase()||
+    (m[1]==='Psalm'&&b[0]==='PSA'));
+  if(!found)throw Error('Unknown Scripture book in featured collection '+source);
+  return {id:d.id+'-'+i,book:found[0],chapter:Number(m[2]),start:Number(m[3]),end:Number(m[4]||m[3]),reps:1,...(Number.isInteger(d.pauseSeconds?.[i])?{pauseSeconds:d.pauseSeconds[i]}:{})};
+ })
+}));
+
+const FBACK={19:'Now I hope in the Lord Jesus to send Timothy to you soon, that I also may be cheered when I learn how you are doing.',20:'I have nobody else like him who will genuinely care for your needs.',21:'For all the others look after their own interests, not those of Jesus Christ.',22:'But you know Timothy’s proven worth, that as a child with his father he has served with me to advance the gospel.',23:'So I hope to send him as soon as I see what happens with me.',24:'And I trust in the Lord that I myself will come soon.'};
+// Hays fallback times (seconds) from BSB-publishing/bsb-align for the sample chapter.
+const HAYS2=[4.24,15.16,25.54,34.94,42.22,47.28,54.42,57.86,68.04,76.77,84.09,90.83,107.91,114.99,118.65,130.11,139.95,150.25,154.97,163.61,170.39,176.69,185.43,189.95,195.07,207.51,214.2,227.86,237.6,242.6];
+const $=id=>document.getElementById(id),audio=$('audio');const key='bible-memory-public-audio-v1';const uid=()=>Math.random().toString(36).slice(2,10);
+let state={tab:'listen',book:'PHP',chapter:2,reader:'hays',selectedVerse:null,lists:[],current:null,options:{repeat:'off',reflect:'tracks',pause:30,speed:1},display:{theme:'dark',font:22,mode:'text'}};
+try{const stored=localStorage.getItem(key);const s=JSON.parse(stored);if(s&&s.lists&&s.options)state={...state,...s,display:{theme:'dark',font:22,mode:'text',...(s.display||{})},tab:'listen',selectedVerse:null}}catch{}
+
+// Barry-only release: preserve saved lists/options/display, changing narrator only.
+state.reader='hays';
+
+/* Retire the untouched example that older app versions stored in the browser.
+   Only remove the exact original six-track test, never someone’s edited copy. */
+try{
+ const migrationKey='bible-memory-public-audio-v1:demo-retirement';
+ if(!localStorage.getItem(migrationKey)){
+  const expected=[['a',19,19,3],['b',20,20,3],['c',21,21,3],['d',19,21,1],['e',22,24,1],['f',19,24,1]];
+  const isOriginal=p=>p?.id==='test'&&p.name==='Philippians 2:19–24 Practice'&&
+   Array.isArray(p.items)&&p.items.length===expected.length&&p.items.every((t,i)=>(
+     t.id===expected[i][0]&&t.book==='PHP'&&Number(t.chapter)===2&&
+     t.start===expected[i][1]&&t.end===expected[i][2]&&t.reps===expected[i][3]&&
+     t.pauseSeconds===undefined));
+  state.lists=state.lists.filter(p=>!isOriginal(p));
+  if(!state.lists.some(p=>p.id===state.current))state.current=state.lists[0]?.id||null;
+  localStorage.setItem(migrationKey,'1');
+ }
+}catch{}
+// On first load after the font-size update, migrate the old default of 18px.
+ // Keep already-customized sizes, and never reapply after someone chooses a smaller font.
+try{
+ const fontMigrationKey='bible-memory-public-audio-v1:font-migration';
+ if(!localStorage.getItem(fontMigrationKey)){
+   if(Number(state.display.font)===18)state.display.font=22;
+   localStorage.setItem(fontMigrationKey,'1');
+ }
+}catch{if(Number(state.display.font)===18)state.display.font=22}
+let chapterCache={},timingCache={};let busy=0;let player={readerChanged:false,steps:[],index:0,phase:'idle',source:'listen',label:'',from:0,to:0,gapLeft:0,gapStart:0,timer:0,token:0,previewEnd:null,error:'',clock:0};let modalName='',reselect=false;
+// Each entry to the Playlists tab begins uncluttered.
+// The user can expand either section until the next visit to this tab.
+let playlistSections={mine:false,featured:false};
+function togglePlaylistSection(which){
+ if(which!=='mine'&&which!=='featured')return;
+ playlistSections[which]=!playlistSections[which];
+ const button=$('section-'+which),area=$('section-'+which+'-content');
+ if(button)button.setAttribute('aria-expanded',String(playlistSections[which]));
+ if(area)area.hidden=!playlistSections[which];
+}
+const backupMetaKey='bible-memory-public-audio-v1:backup-marker';
+let backupMeta=null;
+try{backupMeta=JSON.parse(localStorage.getItem(backupMetaKey)||'null')}catch{}
+function playlistSignature(){
+ const str=JSON.stringify(state.lists);
+ let h=2166136261;
+ for(let i=0;i<str.length;i++){h^=str.charCodeAt(i);h=Math.imul(h,16777619)}
+ return str.length+':'+(h>>>0).toString(16);
+}
+function updateBackupStatus(){
+ const el=document.getElementById('backupStatus');if(!el)return;
+ const needed=!backupMeta?.signature||backupMeta.signature!==playlistSignature();
+ el.classList.toggle('needed',needed);
+ if(!state.lists.length)el.textContent='Editable playlists are stored in this browser. Built-in collections stay available even if browser data is cleared.';
+ else if(!backupMeta?.signature)el.textContent='No backup downloaded yet. Save a copy to Files or iCloud Drive.';
+ else if(needed)el.textContent='Your playlists changed since your last backup. Download a fresh copy when convenient.';
+ else {const date=new Date(backupMeta.at);el.textContent='Backup download requested '+(Number.isFinite(date.getTime())?date.toLocaleDateString():'recently')+'. Keep the file somewhere safe, such as iCloud Drive.'}
+}
+let save=()=>{try{localStorage.setItem(key,JSON.stringify(state))}catch{}updateBackupStatus()};const bname=code=>(BOOKS.find(x=>x[0]===code)||[code,code])[1];const bchap=code=>(BOOKS.find(x=>x[0]===code)||['','',1])[2];const ref=t=>`${bname(t.book)} ${t.chapter}:${t.start}${Number(t.end)>=999?'':t.end!==t.start?'–'+t.end:''}`;const current=()=>state.lists.find(l=>l.id===state.current)||state.lists[0];
+const enc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const api=`https://bible.helloao.org/api/BSB/`;
+function fallbackUrl(book,chapter,reader){if(book!=='PHP')return null;const suffix=reader==='gilbert'?'_G':reader==='hays'?'_H':'';const folder=reader==='gilbert'?'gilbert':reader==='hays'?'hays':'souer';return `https://openbible.com/audio/${folder}/BSB_50_Php_${String(chapter).padStart(3,'0')}${suffix}.mp3`;}
+async function chapterData(book,chapter){const key=`${book}:${chapter}`;if(chapterCache[key])return chapterCache[key];try{const r=await fetch(`${api}${book}/${chapter}.simple.json`);if(!r.ok)throw Error('Bible API unavailable');const d=await r.json();chapterCache[key]=d;return d}catch(e){if(book==='PHP'&&chapter===2){return {numberOfVerses:30,chapter:{content:Object.entries(FBACK).map(([n,text])=>({type:'verse',number:Number(n),text}))},thisChapterAudioLinks:{hays:fallbackUrl(book,chapter,'hays'),gilbert:fallbackUrl(book,chapter,'gilbert'),souer:fallbackUrl(book,chapter,'souer')}}}throw e}}
+async function timingData(book,chapter,reader){const key=`${book}:${chapter}:${reader}`;if(timingCache[key])return timingCache[key];try{const r=await fetch(`${api}${book}/${chapter}.${reader}.audioTimings.json`);if(!r.ok)throw Error('No verse timings for this narrator and chapter');const data=await r.json();if(!Array.isArray(data.verses)||!data.verses.length)throw Error('Invalid timing data');timingCache[key]=data;return data}catch(e){if(book==='PHP'&&chapter===2&&reader==='hays')return {verses:HAYS2,audioLink:fallbackUrl(book,chapter,reader)};throw Error(`Could not load ${NAMES[reader]} verse timestamps for ${bname(book)} ${chapter}.`);}}
+function txtOf(v){if(typeof v.text==='string')return v.text;return (v.content||[]).map(x=>typeof x==='string'?x:typeof x?.text==='string'?x.text:'').join(' ').replace(/\s+/g,' ').trim()}
+function btn(html,fn,klass='btn'){const b=document.createElement('button');b.className=klass;b.innerHTML=html;b.onclick=fn;return b}
+
+function applyDisplay(){
+ const d=state.display||{theme:'dark',font:22,mode:'text'};
+ document.documentElement.dataset.theme=d.theme==='light'?'light':'dark';
+ document.documentElement.style.setProperty('--reader-size',Math.max(14,Math.min(32,Number(d.font)||22))+'px');
+ const b=$('themeSwitch');if(b){b.innerHTML=uiIcon(d.theme==='light'?'moon':'sun',20);b.title=d.theme==='light'?'Switch to dark mode':'Switch to light mode';}
+ const meta=document.querySelector('meta[name=theme-color]');if(meta)meta.setAttribute('content',d.theme==='light'?'#fbfaf7':'#111923');
+}
+function firstLetters(text){return String(text).replace(/[\p{L}\p{N}]+(?:[’'\-][\p{L}\p{N}]+)*/gu,word=>word[0]);}
+/* The Scripture display mode now: verse practice hides the words for its own playback, leaving the saved setting alone. */
+function textMode(){return player.hideText?'none':state.display.mode;}
+function displayText(text){return textMode()==='first'?firstLetters(text):text;}
+function toolbar(){
+ const modes=[['text','Text'],['first','First letters'],['none','No text']];
+ return `<div class="readingToolbar"><div class="modeControl" role="group" aria-label="Scripture display mode">${modes.map(([k,v])=>`<button type="button" data-mode="${k}" class="${textMode()===k?'active':''}" aria-pressed="${textMode()===k}">${v}</button>`).join('')}</div><div class="fontControl"><button data-font="-2" title="Decrease font size" aria-label="Decrease font size">A−</button><button data-font="2" title="Increase font size" aria-label="Increase font size">A+</button></div></div>`;
+}
+function wireToolbar(scope){
+ if(!scope)return;
+ scope.querySelectorAll('[data-mode]').forEach(x=>x.onclick=()=>{player.hideText=false;state.display.mode=x.dataset.mode;save();render();if(modalName==='Now Playing'&&(!$('veil').hidden||embeddedCompact)){refreshPlayerMode();updatePlayerUI();}});
+ scope.querySelectorAll('[data-font]').forEach(x=>x.onclick=()=>{state.display.font=Math.max(14,Math.min(32,state.display.font+Number(x.dataset.font)));applyDisplay();save();});
+}
+function refreshPlayerMode(){const b=$('nowReadingArea');if(b){b.innerHTML=toolbar()+`<div id="nowScripture" class="nowScripture"></div>`;wireToolbar(b);showPlayerPassage();}}
+function verseFromAudio(book,chapter,reader,time){const t=timingCache[`${book}:${chapter}:${reader}`];if(!t?.verses?.length||!Number.isFinite(time))return null;let lo=0,hi=t.verses.length-1,v=0;while(lo<=hi){const mid=(lo+hi)>>1;if(Number(t.verses[mid])<=time+.05){v=mid+1;lo=mid+1}else hi=mid-1;}return v||null;}
+let lastHighlightKey='';
+function syncHighlight(){
+ if(player.phase!=='playing' && player.phase!=='paused')return;
+ const step=player.steps[player.index];if(!step)return;
+ const v=verseFromAudio(step.book,step.chapter,state.reader,audio.currentTime)||step.start;
+ const key=[step.book,step.chapter,v,player.index,textMode(),state.tab,$('veil').hidden?'visible':'covered'].join(':');
+ if(key===lastHighlightKey)return;lastHighlightKey=key;
+ if(state.book===step.book&&state.chapter===step.chapter){
+  document.querySelectorAll('#readerContent .verserow').forEach(row=>row.classList.toggle('activeAudio',Number(row.dataset.verse)===v));
+  const active=document.querySelector('#readerContent .verserow.activeAudio');
+  if(active && $('veil').hidden && player.phase==='playing')active.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+ }
+ const pane=$('nowScripture');if(pane){pane.querySelectorAll('[data-audio-verse]').forEach(row=>row.classList.toggle('playingVerse',Number(row.dataset.audioVerse)===v));
+       const active=pane.querySelector('.playingVerse');
+       if(active && player.phase==='playing' && textMode()!=='none'){
+        const delta=active.getBoundingClientRect().top-pane.getBoundingClientRect().top-12;
+        pane.scrollTo({top:pane.scrollTop+delta,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+       }
+      }
+}
+function showPlayerPassage(){
+ const target=$('nowScripture'),step=player.steps[player.index];if(!target)return;
+ if(textMode()==='none'){target.className='nowScripture muteText';target.innerHTML='<div class="noTextState"><span class="noTextIcon" aria-hidden="true">♫</span><p>Listen and recite from memory</p></div>';return;}
+ target.className='nowScripture';
+ if(!step){target.textContent='Select Scripture to begin listening';return;}
+ const data=chapterCache[`${step.book}:${step.chapter}`];
+ if(!data){target.textContent='Loading Scripture…';return;}
+ const verses=(data.chapter?.content||[]).filter(v=>v.type==='verse'&&v.number>=step.start&&v.number<=step.end);
+ target.innerHTML=verses.map(v=>`<div class="line" data-audio-verse="${v.number}"><span class="verseNum">${v.number}</span>${enc(displayText(txtOf(v)))}</div>`).join('')||'Scripture text not available';
+ // Leave room below the final verse so any active verse can reach the top.
+ const updateSpace=()=>{if(!target.isConnected||textMode()==='none')return;const last=target.querySelector('.line:last-child');target.style.paddingBottom=Math.max(16,target.clientHeight-(last?.getBoundingClientRect().height||30)-12)+'px';lastHighlightKey='';syncHighlight();};
+ requestAnimationFrame(updateSpace);
+}
+
+function render(){state.reader='hays';applyDisplay();save();$('voiceSelect').value=state.reader;$('tabListen').classList.toggle('on',state.tab==='listen');$('tabLists').classList.toggle('on',state.tab==='playlists');if(state.tab==='listen')renderListen();else renderLists();updateMini();}
+function bookOptions(selected){return BOOKS.map(b=>`<option value="${b[0]}" ${b[0]===selected?'selected':''}>${enc(b[1])}</option>`).join('')};function chapterOptions(book,chapter){return Array.from({length:bchap(book)},(_,i)=>`<option value="${i+1}" ${i+1===Number(chapter)?'selected':''}>${i+1}</option>`).join('')};
+
+
+/* PHILIPPIANS_LOCAL_SOURCES_V3. Inert versioned publisher data; fixed safe rendering.
+   Sources must pass independent provenance verification before release. */
+// The personal proxy's original routing is preserved; fetch shared public data directly.
+const STUDY_RELEASE='v2-a101d843a2f0cd3fc0c6';
+const STUDY_BASE='/study-data/'+STUDY_RELEASE+'-raw1/';
+const PHIL_RESOURCE_URL=STUDY_BASE+'manifest.json';
+
+const philStudyCache={};
+let philTab='overview',philRefVerse=null,philPanelToken=0;
+const PHIL_FONT_KEY='bible-memory-public-audio-v1:study-font';
+let philTextSize=18;
+try{const saved=Number(localStorage.getItem(PHIL_FONT_KEY));if(Number.isInteger(saved)&&saved>=16&&saved<=30)philTextSize=saved;}catch(e){}
+function philFontControls(){return '<div class="studyFontControls"><span>Resource text</span><div class="studyFontButtons"><button type="button" data-phil-font="-2" aria-label="Make resource text smaller">A−</button><output data-phil-font-size aria-live="polite">'+philTextSize+'px</output><button type="button" data-phil-font="2" aria-label="Make resource text larger">A+</button></div></div>';}
+function philApplyTextSize(){
+ document.documentElement.style.setProperty('--study-font-size',philTextSize+'px');
+ document.querySelectorAll('[data-phil-font-size]').forEach(n=>n.textContent=philTextSize+'px');
+ document.querySelectorAll('[data-phil-font]').forEach(b=>b.disabled=Number(b.dataset.philFont)<0?philTextSize<=16:philTextSize>=30);
+}
+function philWireTextControls(container){
+ container.querySelectorAll('[data-phil-font]').forEach(b=>b.onclick=()=>{
+  philTextSize=Math.max(16,Math.min(30,philTextSize+Number(b.dataset.philFont)));
+  state.studyFont=philTextSize;save();
+  philApplyTextSize();
+ });
+ philApplyTextSize();
+}
+
+function philStudyHTML(){
+ if(!BOOKS.some(b=>b[0]===state.book)||Number(state.chapter)<1||Number(state.chapter)>bchap(state.book))return '';
+ const tabs=[['overview','Overview'],['notes','Commentary'],['related','Cross References'],['words','Dictionary']];
+ return '<details class="studyRoot" id="philStudy"><summary>'+uiIcon('book',14)+' <span>Explore this chapter</span><span class="studyArrow">'+uiIcon('chevron',15)+'</span></summary><div class="studyBox"><div class="studyTabs" role="tablist" aria-label="Bible study resources">'+
+ tabs.map(([id,label])=>'<button type="button" role="tab" aria-controls="philStudyPanel" data-phil-tab="'+id+'" aria-selected="'+(philTab===id)+'">'+label+'</button>').join('')+
+ '</div>'+philFontControls()+'<div id="philStudyPanel" class="studyPanel" role="tabpanel" aria-live="polite"></div><button type="button" class="studyCreditButton" id="philSources">Sources</button></div></details>';
+}
+function wirePhilStudy(){
+ const root=$('philStudy');if(!root)return;
+ philWireTextControls(root);
+ root.querySelectorAll('[data-phil-tab]').forEach(button=>button.onclick=()=>{
+  philTab=button.dataset.philTab;
+  root.querySelectorAll('[data-phil-tab]').forEach(t=>t.setAttribute('aria-selected',String(t===button)));
+  renderPhilStudyTab();
+ });
+ root.querySelector('summary').addEventListener('click',()=>{if(!root.open)requestAnimationFrame(()=>{if(root.open)renderPhilStudyTab()})});
+ $('philSources').onclick=()=>{
+  openModal('Sources',
+   '<p><a href="https://tyndaleopenresources.com/" target="_blank" rel="noopener noreferrer"><strong>Tyndale Open Study Notes</strong></a> · Copyright © 2022 by Tyndale House Publishers. Adapted from Tyndale Open Study Notes. The original work by Tyndale House Publishers is available for free at <a href="https://www.tyndaleopenresources.com/" target="_blank" rel="noopener noreferrer">Tyndale Open Resources</a>. · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. Original wording; JSON conversion and display formatting adjusted. Adapted resource data remains CC BY-SA 4.0.</p>'+
+   '<p><a href="https://tyndaleopenresources.com/" target="_blank" rel="noopener noreferrer"><strong>Tyndale Open Bible Dictionary</strong></a> · Copyright © 2023 by Tyndale House Publishers. Adapted from Tyndale Open Bible Dictionary. The original work by Tyndale House Publishers is available for free at <a href="https://www.tyndaleopenresources.com/" target="_blank" rel="noopener noreferrer">Tyndale Open Resources</a>. · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. Original dictionary articles. Words and names are matched to the BSB chapter using reviewed headwords, forms and published redirects. Related study topics are selected by explicit Bible references in the source.</p>'+
+   '<p><a href="https://crossreferences.org/project/data/" target="_blank" rel="noopener noreferrer"><strong>CrossReferences.org, BSB cross-references</strong></a> · Based on the Treasury of Scripture Knowledge, with the project’s own curation and BSB mapping · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.</p>'+
+   '<p>Resource data and provenance: <a href="'+enc(PHIL_RESOURCE_URL)+'" target="_blank" rel="noopener noreferrer">Study resource source record</a>. Selected original text is reformatted for this reader. Linked maps, pictures, charts and supplemental textboxes are not included. No endorsement by the original publishers is implied.</p>'+
+   '<p><a href="https://berean.bible/terms.htm" target="_blank" rel="noopener noreferrer"><strong>Berean Standard Bible</strong></a> · Public domain.</p>');
+ };
+}
+function philPanel(heading,source,inner,after=''){
+ return '<div class="studyPanelHeader"><strong>'+enc(heading)+'</strong><span class="studySrc">'+enc(source)+'</span></div><div class="studyScroll">'+inner+'</div>'+after;
+}
+function philFetchJson(url){
+ if(!philStudyCache[url]){
+  const keys=Object.keys(philStudyCache);if(keys.length>=48){const old=keys.find(k=>k!==PHIL_RESOURCE_URL);if(old)delete philStudyCache[old];}
+  philStudyCache[url]=fetch(url,{credentials:'omit',referrerPolicy:'no-referrer'}).then(r=>{if(!r.ok)throw Error('Source not available');return r.json()}).catch(e=>{delete philStudyCache[url];throw e});
+ }
+ return philStudyCache[url];
+}
+// All imported content is inert data: only these fixed tags are produced.
+function philRich(nodes,depth=0){
+ if(!Array.isArray(nodes)||depth>12)throw Error('Invalid resource structure');
+ return nodes.map(n=>{
+  if(typeof n==='string')return enc(n);
+  if(!n||typeof n!=='object'||Array.isArray(n))throw Error('Invalid resource node');
+  if(n.t==='x2002')return '&#8194;';
+  if(['p','h','omit','span'].includes(n.t)){
+   const tag=n.t==='h'?'h4':n.t==='p'?'p':'span';
+   return '<'+tag+'>'+philRich(n.c,depth+1)+'</'+tag+'>';
+  }
+  if(['em','ref','link'].includes(n.t)&&typeof n.v==='string')return n.t==='em'?'<em>'+enc(n.v)+'</em>':enc(n.v);
+  throw Error('Unsupported resource node');
+ }).join('');
+}
+function studyFail(){throw Error('Invalid resource data')}
+function studyBookValid(book){return BOOKS.some(b=>b[0]===book)}
+function studyEnvelope(data,kind,book,chapter){
+ if(!data||data.format!=='bsb-study-'+kind+'-v2'||data.version!==STUDY_RELEASE||(book&&data.book!==book)||(chapter&&data.chapter!==chapter))studyFail();
+ return data;
+}
+async function studyRead(path,validate){
+ if(!/^[a-zA-Z0-9_./-]+\.json$/.test(path)||path.includes('..'))studyFail();
+ const url=STUDY_BASE+path;
+ try{return validate(await philFetchJson(url));}catch(e){delete philStudyCache[url];throw e;}
+}
+async function studyManifest(){return studyRead('manifest.json',data=>{
+ studyEnvelope(data,'manifest');
+ if(!data.books||!BOOKS.every(([code,name,count])=>{const b=data.books[code];return b&&b.name===name&&b.chapters===count&&Array.isArray(b.bounds)&&b.bounds.length===count&&b.bounds.every(v=>Number.isInteger(v)&&v>0&&v<=176)}))studyFail();
+ return data;
+});}
+function studyRecord(n){if(!n||typeof n.id!=='string'||!n.id||typeof n.title!=='string')studyFail();philRich(n.content);return n;}
+function studyNotes(notes,book,manifest){
+ if(!Array.isArray(notes)||notes.length>2000||new Set(notes.map(n=>n&&n.id)).size!==notes.length)studyFail();
+ for(const n of notes){studyRecord(n);if(!['BookIntro','BookIntroSummary','ChapterIntro','StudyNote','ThemeNote','Profile'].includes(n.type)||!Array.isArray(n.refs))studyFail();
+  if(!n.refs.length&&!(n.sourceReferenceException===true&&n.sourceReferenceStatus==='verse_out_of_bounds'&&n.sourceBookAppCode===book&&typeof n.sourceRefsExact==='string'&&Array.isArray(n.sourceChapterCoverage)&&n.sourceChapterCoverage.length&&n.sourceChapterCoverage.every(c=>Number.isInteger(c)&&c>=1&&c<=manifest.books[book].chapters)))studyFail();
+  for(const r of n.refs){const b=manifest.books[r.book];if(!b||r.book!==book||![r.startChapter,r.endChapter,r.startVerse,r.endVerse].every(Number.isInteger)||r.startChapter<1||r.endChapter>b.chapters||r.endChapter<r.startChapter||r.startVerse<1||r.startVerse>b.bounds[r.startChapter-1]||r.endVerse<1||r.endVerse>b.bounds[r.endChapter-1]||(r.startChapter===r.endChapter&&r.endVerse<r.startVerse))studyFail();}
+ }
+}
+async function studyOverview(book){const m=await studyManifest();return studyRead('overview/'+book+'.json',d=>{studyEnvelope(d,'overview',book);studyNotes(d.notes,book,m);return d;});}
+async function studyChapter(book,chapter){
+ const m=await studyManifest();if(!m.books[book]||!Number.isInteger(chapter)||chapter<1||chapter>m.books[book].chapters)studyFail();
+ return studyRead('chapters/'+book+'/'+chapter+'.json',d=>{
+  studyEnvelope(d,'chapter',book,chapter);studyNotes(d.notes,book,m);
+  if(!d.notes.every(n=>n.refs.some(r=>r.startChapter<=chapter&&r.endChapter>=chapter)||(n.sourceReferenceException===true&&n.sourceChapterCoverage.includes(chapter))))studyFail();
+  if(!Array.isArray(d.crossrefs)||d.crossrefs.length>5000||!Array.isArray(d.dictionaryWords)||!Array.isArray(d.dictionaryRelated)||!d.dictionaryArticles)studyFail();
+  for(const r of d.crossrefs){if(!Number.isInteger(r.verse)||r.verse<1||r.verse>m.books[book].bounds[chapter-1]||typeof r.anchor!=='string'||!Array.isArray(r.refs)||!Array.isArray(r.targets)||r.refs.length!==r.targets.length)studyFail();
+   for(let i=0;i<r.targets.length;i++){const t=r.targets[i];if(typeof t.label!=='string'||t.label!==r.refs[i]||!Array.isArray(t.passages)||!t.passages.length||t.passages.length>200)studyFail();for(const p of t.passages){const b=m.books[p.book];if(!b||!Number.isInteger(p.chapter)||p.chapter<1||p.chapter>b.chapters||!Array.isArray(p.verses)||!p.verses.length||new Set(p.verses).size!==p.verses.length||!p.verses.every(v=>Number.isInteger(v)&&v>=1&&v<=b.bounds[p.chapter-1]))studyFail();}}
+  }
+  const seen=new Set(),labels=new Set();
+  for(const w of d.dictionaryWords){if(!w||typeof w.id!=='string'||seen.has(w.id)||typeof w.label!=='string'||!w.label.trim()||w.label.length>160||labels.has(w.label.toLocaleLowerCase())||typeof w.sourceTitle!=='string'||!['exact_headword','reviewed_exact_headword','reviewed_inflection','source_verified_alias','qualified_headword','reviewed_qualified_headword','source_verified_redirect','combined_reviewed_forms'].includes(w.matchingRule)||!Array.isArray(w.evidence)||!w.evidence.length||!w.evidence.every(e=>e&&Number.isInteger(e.verse)&&e.verse>=1&&e.verse<=m.books[book].bounds[chapter-1]&&typeof e.phrase==='string'&&e.phrase&&typeof e.text==='string'&&e.text.includes(e.phrase)))studyFail();seen.add(w.id);labels.add(w.label.toLocaleLowerCase());}
+  for(const r of d.dictionaryRelated){if(!r||typeof r.id!=='string'||typeof r.title!=='string'||seen.has(r.id))studyFail();seen.add(r.id);}
+  for(const w of d.dictionaryWords){if(d.dictionaryArticles[w.id]?.title!==w.sourceTitle)studyFail();}
+  for(const r of d.dictionaryRelated){if(d.dictionaryArticles[r.id]?.title!==r.title)studyFail();}
+  for(const id of seen){const a=d.dictionaryArticles[id];if(!a||typeof a.title!=='string'||typeof a.file!=='string'||!/^dictionary\/[a-f0-9]{64}\.json$/.test(a.file))studyFail();}
+  return d;
+ });
+}
+async function studyArticle(id,descriptor){return studyRead(descriptor.file,d=>{studyEnvelope(d,'dictionary');studyRecord(d);if(d.id!==id||d.title!==descriptor.title)studyFail();return d;});}
+function philAssociation(n){if(!n.refs.length)return n.sourceRefsExact+' · Source verse numbering differs from BSB (no verse link)';return n.refs.map(r=>bname(r.book)+' '+r.startChapter+':'+r.startVerse+(r.endChapter!==r.startChapter?'–'+r.endChapter+':'+r.endVerse:r.endVerse!==r.startVerse?'–'+r.endVerse:'')).join('; ');}
+function philEntry(n,label){return '<article class="studyEntry"><h3>'+enc(label||n.title)+'</h3>'+philRich(n.content)+'</article>';}
+async function renderPhilStudyTab(){
+ const el=$('philStudyPanel');if(!el)return;
+ const book=state.book,chapter=Number(state.chapter),tab=philTab,token=++philPanelToken;
+ const active=()=>token===philPanelToken&&$('philStudyPanel')===el&&state.book===book&&Number(state.chapter)===chapter;
+ el.innerHTML='<p class="studyFine">Loading original source…</p>';
+ try{
+  if(tab==='overview'){
+   const data=await studyOverview(book);if(!active())return;
+   const intros=data.notes.filter(n=>['BookIntro','BookIntroSummary'].includes(n.type));
+   el.innerHTML=philPanel(bname(book)+' · Introduction','Tyndale',intros.map(n=>philEntry(n,n.type==='BookIntro'?'Book introduction':'Book introduction · Summary')).join('')+'<p class="studyFine">No separate published chapter introduction is available in this source.</p>');return;
+  }
+  const data=await studyChapter(book,chapter);if(!active())return;
+  if(tab==='notes'){
+   el.innerHTML=philPanel(bname(book)+' '+chapter+' · Commentary','Tyndale',data.notes.map(n=>philEntry(n,philAssociation(n)+(n.type==='StudyNote'?'':' · '+n.title))).join('')||'<p>No published notes are available for this chapter.</p>');return;
+  }
+  if(tab==='related'){
+   const rows=data.crossrefs,verses=[...new Set(rows.map(r=>r.verse))].sort((a,b)=>a-b);
+   if(!verses.length){el.innerHTML=philPanel(bname(book)+' '+chapter,'CrossReferences.org · TSK','<p>No cross-references are available for this chapter in the verified source.</p>');return;}
+   if(!verses.includes(philRefVerse))philRefVerse=verses.includes(state.selectedVerse)?state.selectedVerse:verses.includes(5)?5:verses[0];
+   const contents=()=>philPanel(bname(book)+' '+chapter+':'+philRefVerse,'CrossReferences.org · TSK',rows.filter(r=>r.verse===philRefVerse).map((r,ri)=>'<div class="studyAnchor">'+enc(r.anchor||bname(book)+' '+chapter+':'+philRefVerse)+'</div>'+r.targets.map((t,ti)=>'<button class="studyReference" type="button" data-phil-cross="'+ri+':'+ti+'">'+enc(t.label)+'<span aria-hidden="true">›</span></button>').join('')).join(''));
+   const wire=()=>el.querySelectorAll('[data-phil-cross]').forEach(button=>button.onclick=()=>{const [ri,ti]=button.dataset.philCross.split(':').map(Number),t=rows.filter(r=>r.verse===philRefVerse)[ri]?.targets[ti];if(t)philCross(t.label,t.passages)});
+   el.innerHTML='<label class="studyFine" for="philVerseSelect">Cross-references for verse</label><select id="philVerseSelect" class="studySelect" aria-label="Choose verse">'+verses.map(v=>'<option value="'+v+'"'+(v===philRefVerse?' selected':'')+'>'+enc(bname(book))+' '+chapter+':'+v+'</option>').join('')+'</select><div id="philRefArea">'+contents()+'</div>';
+   $('philVerseSelect').onchange=e=>{philRefVerse=Number(e.target.value);$('philRefArea').innerHTML=contents();wire()};wire();return;
+  }
+  if(tab==='words'){
+   const words=data.dictionaryWords,related=data.dictionaryRelated;let scroll=0,lastTopic=null,articleToken=0;
+   const showTopics=(restore=false)=>{
+    ++articleToken;if(!active())return;
+    const button=(id,label)=>'<button type="button" class="studyTopic" data-phil-topic="'+enc(id)+'"><span>'+enc(label)+'</span><span aria-hidden="true">›</span></button>';
+    const primary=words.map(w=>button(w.id,w.label)).join('')||'<p>No verified dictionary matches are available for words or names in this chapter.</p>';
+    const secondary=related.map(r=>button(r.id,r.title)).join('')||'<p>No additional related study topics are available for this chapter.</p>';
+    el.innerHTML=philPanel('Dictionary · '+bname(book)+' '+chapter,'Tyndale','<h3 class="studyTopicHeading">Words and names in this chapter</h3><p class="studyFine">Selected words and names with verified Tyndale entries; not every word is covered.</p>'+primary+'<h3 class="studyTopicHeading">Related study topics</h3><p class="studyFine">These dictionary articles cite this chapter; their titles may not appear in the Scripture text.</p>'+secondary);
+    const list=el.querySelector('.studyScroll'),buttons=[...el.querySelectorAll('[data-phil-topic]')];
+    buttons.forEach(b=>b.onclick=()=>{scroll=list.scrollTop;lastTopic=b.dataset.philTopic;showArticle(lastTopic)});
+    if(restore){list.scrollTop=scroll;buttons.find(b=>b.dataset.philTopic===lastTopic)?.focus({preventScroll:true});}
+   };
+   const showArticle=async id=>{
+    const request=++articleToken,descriptor=data.dictionaryArticles[id];if(!descriptor||!active())return;
+    el.innerHTML='<button type="button" class="studyBackTopics" id="philBackTopics">← Back to topics</button><div id="studyArticle"><p class="studyFine">Loading original source…</p></div>';
+    const back=$('philBackTopics');back.onclick=()=>showTopics(true);back.focus({preventScroll:true});
+    try{const item=await studyArticle(id,descriptor);if(!active()||request!==articleToken)return;$('studyArticle').innerHTML=philPanel(item.title,'Tyndale',philEntry(item));}
+    catch(e){if(!active()||request!==articleToken)return;$('studyArticle').innerHTML='<p class="studyFine">The original dictionary article could not be loaded. Please try again.</p><button type="button" class="studyOpen" id="studyArticleRetry">Retry</button>';$('studyArticleRetry').onclick=()=>showArticle(id);}
+   };
+   showTopics();return;
+  }
+ }catch(e){if(!active())return;el.innerHTML='<p class="studyFine">The original resource could not be loaded right now. Please check your connection and try again.</p><button class="studyOpen" id="philRetry" type="button">Retry</button>';$('philRetry').onclick=()=>renderPhilStudyTab();}
+}
+const TSK_BOOK_CODES={"gen":"GEN","exod":"EXO","lev":"LEV","num":"NUM","deut":"DEU","josh":"JOS","judg":"JDG","ruth":"RUT","1 sam":"1SA","2 sam":"2SA","1 kgs":"1KI","2 kgs":"2KI","1 chr":"1CH","2 chr":"2CH","ezra":"EZR","neh":"NEH","esth":"EST","job":"JOB","ps":"PSA","prov":"PRO","eccl":"ECC","song":"SNG","isa":"ISA","jer":"JER","lam":"LAM","ezek":"EZK","dan":"DAN","hos":"HOS","joel":"JOL","amos":"AMO","obad":"OBA","jonah":"JON","mic":"MIC","nah":"NAM","hab":"HAB","zeph":"ZEP","hag":"HAG","zech":"ZEC","mal":"MAL","matt":"MAT","mark":"MRK","luke":"LUK","john":"JHN","acts":"ACT","rom":"ROM","1 cor":"1CO","2 cor":"2CO","gal":"GAL","eph":"EPH","phil":"PHP","col":"COL","1 thess":"1TH","2 thess":"2TH","1 tim":"1TI","2 tim":"2TI","titus":"TTS","phlm":"PHM","heb":"HEB","jas":"JAS","1 pet":"1PE","2 pet":"2PE","1 john":"1JN","2 john":"2JN","3 john":"3JN","jude":"JUD","rev":"REV"};
+function philParseReference(reference){
+ const m=/^(.+?) (\d+):(\d+(?:-\d+)?(?:,\d+(?:-\d+)?)*)$/.exec(reference);
+ if(!m)throw Error('Unsupported reference');
+ const key=TSK_BOOK_CODES[m[1].toLowerCase()],chapter=Number(m[2]);
+ if(!key||chapter<1||chapter>bchap(key))throw Error('Unsupported book/chapter');
+ const numbers=[];
+ for(const group of m[3].split(',')){
+  const pair=group.split('-').map(Number),start=pair[0],end=pair[1]||start;
+  if(start<1||end<start||end>176)throw Error('Unsupported verse range');
+  for(let v=start;v<=end;v++)if(!numbers.includes(v))numbers.push(v);
+ }
+ return {key,chapter,numbers};
+}
+let philCrossToken=0;
+async function philCross(reference,passages){
+ const token=++philCrossToken,root=$('philStudy'),originBook=state.book,originChapter=state.chapter;
+ const active=()=>token===philCrossToken&&$('philStudy')===root&&state.book===originBook&&state.chapter===originChapter;
+ try{
+  if(!Array.isArray(passages)||!passages.length)throw Error('Missing verified reference');
+  const blocks=[];
+  for(const p of passages){
+   const source=await chapterData(p.book,p.chapter);if(!active())return;
+   const sourceVerses=(source.chapter?.content||[]).filter(v=>v.type==='verse');
+   const verses=p.verses.map(n=>sourceVerses.find(v=>Number(v.number)===n));
+   if(verses.some(v=>!v))throw Error('Incomplete passage');
+   blocks.push((passages.length>1?'<h3>'+enc(bname(p.book)+' '+p.chapter)+'</h3>':'')+verses.map(v=>'<p><strong>'+Number(v.number)+'</strong> '+enc(txtOf(v))+'</p>').join(''));
+  }
+  if(!active())return;
+  openModal(reference+' · BSB',philFontControls()+'<div class="studyPassage">'+blocks.join('')+'</div><p class="studyFine">Berean Standard Bible · Public domain</p><button type="button" class="btn" id="philBack">Back to '+enc(bname(originBook))+'</button>');
+  $('philBack').onclick=closeModal;philWireTextControls($('sheet'));
+ }catch(e){if(!active())return;openModal(reference,'<p>This passage could not load completely. Check your connection and try again.</p>');}
+}
+
+function renderListen(){const view=embeddedView();view.innerHTML=`<div class="selectRow"><select id="listenBook" aria-label="Choose Bible book">${bookOptions(state.book)}</select><select id="listenChapter" aria-label="Choose chapter">${chapterOptions(state.book,state.chapter)}</select></div><div class="hero"><div class="eyebrow">NOW READING</div><h2>${enc(bname(state.book))} ${state.chapter}</h2><p>${enc(NAMES[state.reader])} · BSB</p><button class="btn primary full" id="listenPlay">${uiIcon('play',18)} Listen to Chapter</button></div>${philStudyHTML()}<div class="controlsline"><h2>Scripture</h2><button class="mutebtn" id="listenOptions">Repeat & Reflect ${uiIcon('settings',15)}</button></div>${toolbar()}<div id="readerContent" class="verselist"><p>Loading verses…</p></div>`;
+ $('listenBook').onchange=e=>{state.book=e.target.value;state.chapter=1;state.selectedVerse=null;render()};$('listenChapter').onchange=e=>{state.chapter=Number(e.target.value);state.selectedVerse=null;render()};$('listenPlay').onclick=()=>startListen(false);$('listenOptions').onclick=()=>openSettings();wireToolbar(view);wirePhilStudy();
+ const token=++busy;chapterData(state.book,state.chapter).then(d=>{if(token!==busy)return;const verses=d.chapter.content.filter(v=>v.type==='verse');const container=$('readerContent');if(!container)return;container.innerHTML='';
+if(textMode()==='none'){
+ container.innerHTML='<div class="noTextState"><span class="noTextIcon" aria-hidden="true">♫</span><p>Scripture text is hidden while you listen.</p></div>';
+ renderListenSelected();lastHighlightKey='';syncHighlight();return;
+}
+if(!verses.length){container.innerHTML='<p>Unable to display the chapter text here. Try Listen to Chapter.</p>';return;}verses.forEach(v=>{const div=document.createElement('div');div.className='verserow'+(state.selectedVerse===v.number?' selected':'');div.dataset.verse=String(v.number);div.innerHTML=`<button class="versernum" aria-label="Select verse ${v.number}">${v.number}</button><div class="versebody">${textMode()==='none'?'':enc(displayText(txtOf(v)))}</div>`;div.querySelector('button').onclick=()=>{state.selectedVerse=v.number;renderListenSelected()};container.append(div)});renderListenSelected();lastHighlightKey='';syncHighlight();}).catch(()=>{const el=$('readerContent');if(el)el.innerHTML='<p>The Bible text could not load. You can still try listening to the audio online.</p>';});}
+function renderListenSelected(){const d=$('readerContent');if(!d)return;Array.from(d.children).forEach((n,i)=>n.classList.toggle('selected',Number(n.querySelector('.versernum')?.textContent)===state.selectedVerse));let bar=$('chosenBar');if(!bar){bar=document.createElement('div');bar.id='chosenBar';d.before(bar)}if(textMode()==='none'){bar.innerHTML='';return;}if(state.selectedVerse){bar.innerHTML=`<div style="background:#1d333c;border-radius:12px;padding:11px 12px;display:flex;align-items:center;justify-content:space-between;gap:10px"><span style="font-size:14px">Verse ${state.selectedVerse} selected</span><span style="display:flex;gap:6px"><button class="btn small primary" id="playFromHere">${uiIcon('play',17)} Listen</button><button class="btn small" id="addHere">${uiIcon('plus',17)} Add</button></span></div>`;$('playFromHere').onclick=()=>startSelectedRange({book:state.book,chapter:state.chapter,start:state.selectedVerse,end:state.selectedVerse});$('addHere').onclick=()=>openAdd({book:state.book,chapter:state.chapter,start:state.selectedVerse,end:state.selectedVerse})}else{bar.innerHTML=''}}
+function renderLists(){const view=embeddedView();const list=current();view.innerHTML=`<div class="tag">Memory practice</div><h1>Playlists</h1><p class="sub">Tap a section to open it. ${false?'My Playlists':'My Playlists'} holds your own playlists; Featured Playlists has ready-made Scripture collections you can listen to or add.</p><section class="playlistSection"><button id="section-mine" class="sectionToggle" type="button" aria-controls="section-mine-content" aria-expanded="${playlistSections.mine}"><span class="sectionTitle">${false?'My Playlists':'My Playlists'}</span><span class="sectionRight">${state.lists.length} playlists <span class="sectionChevron">${uiIcon('chevron',18)}</span></span></button><div id="section-mine-content" class="sectionContent" ${playlistSections.mine?'':'hidden'}><div id="listCards"></div><button class="btn full" id="createList">${uiIcon('plus',17)} New Playlist</button><div id="playlistEditor" ${list?'':'hidden'}><div class="sectionrow"><h2>${enc(list?.name||'Practice')}</h2><button class="mutebtn" id="playlistPrefs">Repeat & Reflect ${uiIcon('settings',15)}</button></div><div class="split"><button class="btn primary full" id="playList">${uiIcon('play',18)} Play Playlist</button><button class="btn full" id="renameList">${uiIcon('more',18)} Edit</button></div><div id="trackList"></div><button class="add" id="addPassage">${uiIcon('plus',17)} Add Scripture</button></div><p class="empty" ${list?'hidden':''}>No personal playlists yet. Create one, or add a featured collection below.</p><div class="backupRow"><button class="mutebtn" id="backupPlaylists" type="button">${uiIcon('download',17)} Back up playlists</button><button class="mutebtn" id="restorePlaylists" type="button">${uiIcon('upload',17)} Restore playlists</button><input id="restoreFile" type="file" accept="application/json,.json" hidden></div><p id="backupStatus" class="backupStatus" role="status" aria-live="polite"></p><p class="backupHint">Backups save your editable playlists on this device; featured collections are always available in the app. Download a backup after you make changes.</p></div></section><section class="playlistSection"><button id="section-featured" class="sectionToggle" type="button" aria-controls="section-featured-content" aria-expanded="${playlistSections.featured}"><span class="sectionTitle">Featured Playlists</span><span class="sectionRight">Browse ${FEATURED.length} collections <span class="sectionChevron">${uiIcon('chevron',18)}</span></span></button><div id="section-featured-content" class="sectionContent" ${playlistSections.featured?'':'hidden'}><p class="sectionInfo">Optional Scripture memory collections. Tap Add to place an editable copy at the top of My Playlists.</p><div id="featuredCards"></div></div></section>`;
+ $('section-mine').onclick=()=>togglePlaylistSection('mine');
+ $('section-featured').onclick=()=>togglePlaylistSection('featured');
+ const featuredHolder=$('featuredCards');
+ FEATURED.forEach(d=>{
+  const entry=document.createElement('div');entry.className='featuredEntry';
+  const button=document.createElement('button');button.type='button';button.className='featuredCard';
+  button.innerHTML='<span class="featuredIcon">'+uiIcon('book',21)+'</span><span style="min-width:0;flex:1"><strong>'+enc(d.title)+'</strong><small>'+enc(d.description)+'</small></span><span class="featureNext">'+uiIcon('chevron',17)+'</span>';
+  button.onclick=()=>openFeatured(d.id);
+  const add=document.createElement('button');add.type='button';add.className='featuredAdd';
+  add.innerHTML=uiIcon('plus',18)+'<span>Add</span>';
+  add.setAttribute('aria-label','Add '+d.title+' to My Playlists');
+  add.title='Add to My Playlists';
+  add.onclick=()=>saveFeatured(d.id);
+  entry.append(button,add);featuredHolder.append(entry);
+ });
+ const cards=$('listCards');state.lists.forEach(p=>{const card=document.createElement('button');card.className='playlistcard'+(p.id===state.current?' active':'');card.innerHTML=`<h3>${enc(p.name)} ${p.id===state.current?'✓':''}</h3><small>${p.items.length} passages · BSB</small>`;card.onclick=()=>{state.current=p.id;render()};cards.append(card)});
+ $('createList').onclick=()=>openCreate();$('playlistPrefs').onclick=openSettings;$('playList').onclick=()=>startPlaylist();$('renameList').onclick=openListMenu;$('addPassage').onclick=()=>openAdd();$('backupPlaylists').onclick=backupPlaylists;$('restorePlaylists').onclick=()=>$('restoreFile').click();$('restoreFile').onchange=restorePlaylists;const out=$('trackList');(list?.items||[]).forEach((t,i)=>{const row=document.createElement('div');row.className='track';row.innerHTML=`<span class="number">${i+1}</span><button class="trackmain" aria-label="Play ${enc(ref(t))}"><span class="trackname">${enc(ref(t))}</span><small>${t.reps||1}× ${Number(t.reps||1)===1?'play':'repeated'}${Number.isInteger(t.pauseSeconds)?' · '+t.pauseSeconds+'s to recite':''}</small></button><button class="iconbtn" aria-label="More options for ${enc(ref(t))}">${uiIcon('more',19)}</button>`;row.children[1].onclick=()=>startPlaylist(i);row.children[2].onclick=()=>openTrackMenu(i);out.append(row)});if(list&&!list.items.length)out.innerHTML='<div class="empty" style="margin:15px 0">Add a verse or passage to start practicing.</div>';updateBackupStatus();}
+
+
+function featuredById(id){return FEATURED.find(d=>d.id===id)}
+function playFeatured(id){
+ const d=featuredById(id);if(!d||!d.items.length)return;
+ resetPlayer();player.source='featured';player.featuredId=id;player.steps=seqFor(d.items,Boolean(d.practice));
+ openPlayer();playStep();
+}
+function saveFeatured(id){
+ const d=featuredById(id);if(!d)return;
+ const copy={id:uid(),name:d.title,items:d.items.map(t=>({...t,id:uid()}))};
+ state.lists.unshift(copy);state.current=copy.id;state.tab='playlists';
+ playlistSections.mine=true;
+ closeModal();render();
+ openModal('Saved to My Playlists','<p><strong>'+enc(d.title)+'</strong> is now at the top of My Playlists. You can edit your copy; the featured original stays available for everyone.</p><button class="btn primary full" id="featuredDone">View My Playlists</button>');
+ $('featuredDone').onclick=()=>{closeModal();$('section-mine')?.scrollIntoView({block:'start',behavior:'smooth'});};
+}
+function openFeatured(id){
+ const d=featuredById(id);if(!d)return;
+ const rows=d.items.map((t,i)=>'<div class="featuredVerse"><span class="featuredNumber">'+(i+1)+'</span><span>'+enc(ref(t))+(Number.isInteger(t.pauseSeconds)?' · '+t.pauseSeconds+'s to recite':'')+'</span></div>').join('');
+ openModal(d.title,
+  '<p class="hint">'+enc(d.description)+'</p>'+
+  '<div class="split"><button class="btn primary full" id="featuredPlay">'+uiIcon('play',18)+' Play</button><button class="btn full" id="featuredCopy">'+uiIcon('plus',17)+' Add to My Playlists</button></div>'+
+  '<div class="featuredList">'+rows+'</div>'+
+  (d.source?'<p class="featuredSource">Selections: <a target="_blank" rel="noopener noreferrer" href="'+enc(d.source)+'">Original source</a>. Narration uses the Berean Standard Bible.</p>':'<p class="featuredSource">Scripture references curated for this app. Narration uses the Berean Standard Bible.</p>')+(d.note?'<p class="featuredSource">'+enc(d.note)+'</p>':'')
+ );
+ $('featuredPlay').onclick=()=>playFeatured(id);
+ $('featuredCopy').onclick=()=>saveFeatured(id);
+}
+
+function backupPlaylists(){
+ const backup={app:'Audio Bible BSB',version:1,exportedAt:new Date().toISOString(),lists:state.lists.map(p=>({name:p.name,items:p.items.map(t=>({book:t.book,chapter:t.chapter,start:t.start,end:t.end,reps:t.reps,...(Number.isInteger(t.pauseSeconds)?{pauseSeconds:t.pauseSeconds}:{})}))}))};
+ const content=new Blob([JSON.stringify(backup,null,2)],{type:'application/json'});
+ const url=URL.createObjectURL(content),a=document.createElement('a');
+ a.href=url;a.download='audio-bible-playlists-'+new Date().toISOString().slice(0,10)+'.json';
+ document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
+ // This tracks when a download was requested, not whether it was saved in iCloud.
+ backupMeta={at:new Date().toISOString(),signature:playlistSignature()};
+ try{localStorage.setItem(backupMetaKey,JSON.stringify(backupMeta))}catch{}
+ updateBackupStatus();
+}
+async function restorePlaylists(e){
+ const input=e.target,file=input.files?.[0];if(!file)return;
+ try{
+  if(file.size>5e6)throw Error('This backup file is too large.');
+  const d=JSON.parse(await file.text());
+  if(d.app!=='Audio Bible BSB'||d.version!==1||!Array.isArray(d.lists)||!d.lists.length||d.lists.length>100)throw Error('This is not an Audio Bible playlist backup.');
+  const imported=d.lists.map(p=>{
+   if(typeof p.name!=='string'||!Array.isArray(p.items)||p.items.length>1000)throw Error('A playlist in this backup is invalid.');
+   const items=p.items.map(t=>{
+    const {book,chapter,start,end,reps,pauseSeconds}=t;
+    if(!BOOKS.some(b=>b[0]===book)||![chapter,start,end,reps].every(Number.isInteger)||chapter<1||chapter>bchap(book)||start<1||end<start||end>176||reps<1||reps>100)throw Error('This backup contains invalid verse references.');
+    if(pauseSeconds!==undefined&&(!Number.isInteger(pauseSeconds)||pauseSeconds<0||pauseSeconds>600))throw Error('Invalid recitation pause in backup.');
+    return {id:uid(),book,chapter,start,end,reps,...(pauseSeconds===undefined?{}:{pauseSeconds})};
+   });
+   return {id:uid(),name:p.name.trim().slice(0,100)||'Restored Playlist',items};
+  });
+  state.lists.push(...imported);state.current=imported[0].id;
+  state.tab='playlists';render();
+  openModal('Playlists restored',`<p>${imported.length} playlist${imported.length===1?'':'s'} added. Your existing playlists were kept.</p><button class="btn primary full" id="restoreDone">Done</button>`);
+  $('restoreDone').onclick=closeModal;
+ }catch(err){openModal('Could not restore playlists',`<p>${enc(err.message||'Please choose a valid Audio Bible backup file.')}</p><button class="btn primary full" id="restoreDone">OK</button>`);$('restoreDone').onclick=closeModal;}
+ finally{input.value='';}
+}
+
+function openModal(title,html){modalName=title;$('sheet').innerHTML=`<div class="sheethead"><h2>${enc(title)}</h2><button class="x" id="closeSheet" aria-label="Close">×</button></div>${html}`;$('veil').hidden=false;$('closeSheet').onclick=closeModal}
+function closeModal(){$('veil').hidden=true;modalName='';lastHighlightKey='';syncHighlight()}$('veil').onclick=e=>{if(e.target===$('veil'))closeModal()};
+function setVoice(next){
+  if(next!=='hays')return;
+  if(!Object.prototype.hasOwnProperty.call(NAMES,next)||next===state.reader)return;
+  const wasPreview=player.phase==='preview';
+  const hasSession=player.steps.length>0 && !wasPreview && !['idle','complete'].includes(player.phase);
+  player.token++;
+  boundaryScheduler.cancel();
+  audio.pause();
+  clearTimeout(player.timer);clearInterval(player.clock);
+  player.gapLeft=0;player.previewEnd=null;
+  state.reader=next;
+  if(wasPreview){player.phase='idle';player.steps=[];}
+  else if(hasSession){player.phase='paused';player.readerChanged=true;}
+  render();updatePlayerUI();
+}
+function openVoice(){openModal('Choose a narrator',`<p class="hint">Preview plays Philippians 2:19–20 together as a voice sample. Barry Hays is used for listening and playlists.</p><div id="voiceChoices"></div><p class="hint">Narrations: Berean Standard Bible (CC0). Barry Hays is the available narrator for this release. Verse timings are loaded specifically for the selected voice, never reused from another recording.</p>`);const out=$('voiceChoices');[['hays',NAMES.hays]].forEach(([id,name])=>{const row=document.createElement('div');row.className='voiceOption'+(id===state.reader?' active':'');row.innerHTML=`<div class="voiceName"><strong>${name}</strong><small>${id===state.reader?'Selected voice':'BSB · verse timing supported'}</small></div><button class="sample" aria-label="Preview ${name}">${uiIcon("play",16)} Preview</button><button class="choose" aria-label="Use ${name}">${id===state.reader?'✓':'Use'}</button>`;row.children[1].onclick=()=>previewVoice(id,row.children[1]);row.children[2].onclick=()=>{setVoice(id);closeModal();};out.append(row)});}
+function openSpeed(){
+ openModal('Playback Speed',`<p class="hint">Choose how fast the narration plays.</p><div class="modeControl" style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">${[.5,.75,1,1.25,1.5,1.75,2].map(v=>`<button style="min-height:49px" class="${state.options.speed===v?'active':''}" data-rate="${v}">${v}×</button>`).join('')}</div>`);
+ document.querySelectorAll('[data-rate]').forEach(x=>x.onclick=()=>{state.options.speed=Number(x.dataset.rate);audio.playbackRate=state.options.speed;save();closeModal();openPlayer();});
+}
+function openSettings(){openModal('Repeat & Reflect',`<p class="hint">These controls work in both Audio Bible and Playlists.</p><div class="setting"><span>Repeat</span><select id="repeatChoice"><option value="off">Off</option><option value="verse">Current verse</option><option value="passage">Current passage</option><option value="playlist">Whole playlist / chapter</option></select></div><div class="setting"><span>Reflect</span><select id="reflectChoice"><option value="off">Off</option><option value="verses">After every verse</option><option value="tracks">After each track</option><option value="reps">Between repetitions</option></select></div><div class="setting"><span>Reflection pause</span><select id="pauseChoice">${[3,5,10,30,60,120,180].map(s=>`<option value="${s}">${s<60?s+' seconds':s/60+' min'}</option>`).join('')}</select></div><div class="setting"><span>Speed</span><select id="speedChoice">${[0.5,0.75,1,1.25,1.5,1.75,2].map(s=>`<option value="${s}">${s}×</option>`).join('')}</select></div><p class="hint">In a memory playlist, each track can also have its own repetition count. Reflection pauses let you recite aloud.</p><button id="savePrefs" class="btn primary full" style="margin-top:20px">Save Settings</button>`);$('repeatChoice').value=state.options.repeat;$('reflectChoice').value=state.options.reflect;$('pauseChoice').value=state.options.pause;$('speedChoice').value=state.options.speed;$('savePrefs').onclick=()=>{state.options={repeat:$('repeatChoice').value,reflect:$('reflectChoice').value,pause:Number($('pauseChoice').value),speed:Number($('speedChoice').value)};audio.playbackRate=state.options.speed;closeModal();render()}}
+function openAdd(pre={}){if(!current()){openCreate();return;}const book=pre.book||state.book,ch=pre.chapter||state.chapter;openModal('Add Scripture',`<p class="hint">Choose one verse or a range. Choose any verse or a range, then add it to your playlist.</p><div class="formField"><label for="addBook">Book</label><select id="addBook">${bookOptions(book)}</select></div><div class="formField"><label for="addChapter">Chapter</label><select id="addChapter">${chapterOptions(book,ch)}</select></div><div class="split"><div class="formField" style="flex:1"><label for="addStart">Start verse</label><input id="addStart" type="number" min="1" value="${pre.start||(book==='PHP'&&ch===2?19:1)}"></div><div class="formField" style="flex:1"><label for="addEnd">End verse</label><input id="addEnd" type="number" min="1" value="${pre.end||(book==='PHP'&&ch===2?24:1)}"></div></div><div class="formField"><label for="addReps">Repeat this passage</label><select id="addReps">${[1,2,3,5,10].map(n=>`<option value="${n}">${n}×</option>`).join('')}</select></div><div id="addError" class="warn" hidden></div><button class="btn primary full" id="saveAdd">Add to Playlist</button>`);const update=()=>{const t=$('addBook').value;$('addChapter').innerHTML=chapterOptions(t,1);$('addStart').value=1;$('addEnd').value=1};$('addBook').onchange=update;$('addChapter').onchange=()=>{$('addStart').value=1;$('addEnd').value=1};$('addReps').value='3';$('saveAdd').onclick=async()=>{const b=$('addBook').value,c=Number($('addChapter').value),a=Number($('addStart').value),z=Number($('addEnd').value),n=Number($('addReps').value);const err=$('addError');err.hidden=true;try{if(!Number.isInteger(a)||!Number.isInteger(z)||a<1||z<a||z>176)throw Error('Enter a valid verse range.');const meta=await chapterData(b,c);if(z>meta.numberOfVerses)throw Error(`Chapter ${c} only has ${meta.numberOfVerses} verses.`);current().items.push({id:uid(),book:b,chapter:c,start:a,end:z,reps:n});closeModal();state.tab='playlists';render();}catch(e){err.textContent=e.message;err.hidden=false}}}
+function openTrackMenu(i){const t=current().items[i];openModal(ref(t),`<div class="formField"><label for="editReps">Repeat passage</label><select id="editReps">${[1,2,3,5,10].map(n=>`<option value="${n}">${n}×</option>`).join('')}</select></div><div class="formField"><label for="editPause">Pause after this passage</label><select id="editPause"><option value="default">Use global Reflect setting</option>${[0,15,30,45,60,90,120,180].map(n=>`<option value="${n}">${n===0?'No pause':n+' seconds to recite'}</option>`).join('')}</select></div><div class="split"><button class="btn full" id="up">↑ Move up</button><button class="btn full" id="down">↓ Move down</button></div><div class="split" style="margin-top:10px"><button class="btn full" id="duplicate">Duplicate</button><button class="btn full" id="delete">Remove</button></div><button class="btn primary full" id="doneEdit" style="margin-top:20px">Done</button>`);$('editReps').value=t.reps||1;$('editReps').onchange=e=>{t.reps=Number(e.target.value);save()};$('editPause').value=Number.isInteger(t.pauseSeconds)?String(t.pauseSeconds):'default';$('editPause').onchange=e=>{if(e.target.value==='default')delete t.pauseSeconds;else t.pauseSeconds=Number(e.target.value);save()};$('up').disabled=i===0;$('down').disabled=i===current().items.length-1;$('up').onclick=()=>{const a=current().items;[a[i-1],a[i]]=[a[i],a[i-1]];closeModal();render()};$('down').onclick=()=>{const a=current().items;[a[i+1],a[i]]=[a[i],a[i+1]];closeModal();render()};$('duplicate').onclick=()=>{current().items.splice(i+1,0,{...t,id:uid()});closeModal();render()};$('delete').onclick=()=>{current().items.splice(i,1);closeModal();render()};$('doneEdit').onclick=()=>{closeModal();render()};}
+function openListMenu(){openModal('Playlist Options',`<div class="formField"><label>Playlist name</label><input id="renameInput" value="${enc(current().name)}" /></div><button class="btn primary full" id="renameSave">Save Name</button><button class="btn full" id="deleteList" style="margin-top:12px">Delete Playlist</button>`);$('renameSave').onclick=()=>{const v=$('renameInput').value.trim();if(!v)return;current().name=v;closeModal();render()};$('deleteList').onclick=()=>{state.lists=state.lists.filter(x=>x.id!==state.current);state.current=state.lists[0]?.id||null;closeModal();render()}}
+function openCreate(){openModal('New Playlist',`<div class="formField"><label for="newTitle">Name</label><input id="newTitle" value="Audio Bible"></div><button class="btn primary full" id="createOK">Create Playlist</button>`);$('createOK').onclick=()=>{const v=$('newTitle').value.trim();if(!v)return;const p={id:uid(),name:v,items:[]};state.lists.push(p);state.current=p.id;closeModal();render()}}
+// A best-effort HTMLMediaElement deadline watcher, not a sample-accurate cutter.
+// Re-read media time at every callback; wall-clock time never completes a clip.
+function createBoundaryScheduler({ media, readBoundary, finish, schedule = setTimeout, unschedule = clearTimeout }) {
+  let timer = null;
+  let generation = 0;
+  function cancel() {
+    generation++;
+    if (timer !== null) unschedule(timer);
+    timer = null;
+  }
+  function sync() {
+    cancel();
+    const boundary = readBoundary();
+    if (!boundary || !Number.isFinite(boundary.end) || media.paused || media.seeking || media.ended) return;
+    const rate = Number(media.playbackRate);
+    const position = Number(media.currentTime);
+    if (!(rate > 0) || !Number.isFinite(position)) return;
+    if (position >= boundary.end) {
+      finish(boundary);
+      return;
+    }
+    const ticket = generation;
+    // Deadline estimate follows the current rate. The 250ms cap periodically
+    // reconciles buffering/drift; 4ms avoids a near-boundary busy loop.
+    const delay = Math.max(4, Math.min(250, (boundary.end - position) * 1000 / rate));
+    timer = schedule(() => {
+      if (ticket !== generation) return;
+      timer = null;
+      const current = readBoundary();
+      if (!current || current.key !== boundary.key || current.end !== boundary.end) return;
+      sync();
+    }, delay);
+  }
+  return { sync, cancel };
+}
+
+// Scheduler-only preview: keep the existing 100ms finish threshold unchanged.
+// Source cues remain untouched. Precise word boundaries still need listening QA.
+const boundaryScheduler = createBoundaryScheduler({
+  media: audio,
+  readBoundary: () => {
+    const end = player.phase === 'playing' ? player.to : player.phase === 'preview' ? player.previewEnd : null;
+    return Number.isFinite(end) ? { key: `${player.token}:${player.phase}`, end: end - .1, token: player.token, phase: player.phase } : null;
+  },
+  finish: boundary => {
+    if (boundary.token !== player.token || boundary.phase !== player.phase) return;
+    if (boundary.phase === 'playing') finishStep();
+    else finishVoicePreview();
+  }
+});
+function finishVoicePreview() {
+  boundaryScheduler.cancel();
+  audio.pause();player.previewEnd=null;player.previewButton=null;player.phase='idle';
+  const p=$('voiceChoices');
+  if(p)Array.from(p.querySelectorAll('.sample')).forEach((b,i)=>{b.innerHTML=uiIcon('play',16)+' Preview';b.onclick=()=>previewVoice('hays',b)});
+  updateMini();
+}
+function resetPlayer(){
+  boundaryScheduler.cancel();clearTimeout(player.timer);clearInterval(player.clock);
+  player.token++;player.previewEnd=null;player.previewButton=null;player.steps=[];player.index=0;player.phase='idle';
+  player.gapLeft=0;player._loopOne=false;player.pausedFrom=null;player.readerChanged=false;player.hideText=false;audio.pause();
+}
+function stop(){resetPlayer();updateMini()}
+function seqFor(items,preservePassages=false){const seq=[];const verses=!preservePassages&&(state.options.reflect==='verses'||state.options.repeat==='verse');for(const t of items){for(let n=0;n<(t.reps||1);n++){if(verses&&!Number.isInteger(t.pauseSeconds)){for(let v=t.start;v<=t.end;v++)seq.push({book:t.book,chapter:t.chapter,start:v,end:v,group:t.id,repeat:n,item:t})}else seq.push({book:t.book,chapter:t.chapter,start:t.start,end:t.end,group:t.id,repeat:n,item:t})}}return seq}
+async function startListen(fromSelected){
+ resetPlayer();
+ player.source='listen';
+ const t={id:'listen',book:state.book,chapter:state.chapter,start:fromSelected&&state.selectedVerse?state.selectedVerse:1,end:fromSelected&&state.selectedVerse?state.selectedVerse:1,reps:1};
+ player.steps=[{...t,item:t,group:'listen',repeat:0}];
+ player.label=`${bname(t.book)} ${t.chapter}`;
+ openPlayer();
+ const token=player.token;
+ try{
+  const d=await chapterData(t.book,t.chapter);
+  if(token!==player.token)return;
+  const count=Number(d.numberOfVerses)||d.chapter?.content?.filter(v=>v.type==='verse').length;
+  if(!Number.isFinite(count)||count<t.start)throw Error('Could not determine the final verse of this chapter');
+  t.end=count;
+  player.label='';
+  if(state.options.reflect==='verses'||state.options.repeat==='verse'){
+   player.steps=Array.from({length:count-t.start+1},(_,i)=>({...t,start:t.start+i,end:t.start+i,item:t,group:'listen',repeat:0}));
+  }else{
+   player.steps=[{...t,item:t,group:'listen',repeat:0}];
+  }
+  updatePlayerUI();
+  playStep();
+ }catch(e){if(token!==player.token)return;player.phase='error';player.error=e.message;updatePlayerUI()}
+}
+function startPlaylist(from=0){if(!current()){openCreate();return;}if(!current().items.length){openAdd();return;}resetPlayer();player.source='playlist';player.steps=seqFor(current().items);if(from){const id=current().items[from].id;player.index=Math.max(0,player.steps.findIndex(s=>s.group===id));}openPlayer();playStep()}
+function phaseText(){return {playing:'Listening',loading:'Loading narration…',gap:'Your turn to recite',paused:'Paused',complete:'Finished',error:'Playback unavailable',idle:'Ready',preview:'Voice sample'}[player.phase]||'Ready'}
+function updateMini(){const f=$('float');f.hidden=player.phase==='idle';if(f.hidden)return;const step=player.steps[player.index];$('floatTitle').textContent=player.label||(step?ref(step):'Audio Bible');$('floatSub').textContent=phaseText()+` · ${NAMES[state.reader]}`;$('floatPlay').innerHTML=uiIcon(['playing','loading','gap','preview'].includes(player.phase)?'pause':'play',18);}
+function updatePlayerUI(){updateMini();const area=$('playerArea');if(!area)return;const step=player.steps[player.index];$('nowRef').textContent=textMode()==='none'?(step?bname(step.book):'Audio Bible'):(player.label||(step?ref(step):'Audio Bible'));$('nowReader').textContent=NAMES[state.reader]+' · Berean Standard Bible';$('nowPhase').textContent=phaseText()+(player.phase==='gap'?` · ${Math.max(0,Math.ceil((player.gapLeft-(Date.now()-player.gapStart))/1000))} sec`:'');$('nowPlay').innerHTML=uiIcon(['playing','loading','gap','preview'].includes(player.phase)?'pause':'play',28);const denom=Math.max(.5,player.to-player.from);const pct=(player.phase==='playing')?100*Math.max(0,Math.min(1,(audio.currentTime-player.from)/denom)):0;$('nowProgress').style.width=pct+'%';$('nowProgressLabel').textContent=player.phase==='gap'?'Recite during the pause':textMode()==='none'?'Listening practice':`${Math.min(player.index+1,player.steps.length)} of ${player.steps.length} sections`;$('nowRepeat').innerHTML=uiIcon('repeat',15)+' '+({'off':'Repeat off','verse':'Verse','passage':'Passage','playlist':'Playlist'}[state.options.repeat]);$('nowReflect').innerHTML=uiIcon('timer',15)+' '+(Number.isInteger(step?.item?.pauseSeconds)?step.item.pauseSeconds+'s recite':state.options.reflect==='off'?'Reflect off':state.options.pause+'s pause');$('nowError').hidden=player.phase!=='error';if(player.phase==='error')$('nowError').textContent=player.error||'The audio could not load. Try opening this player in Safari with internet access.';}
+function openPlayer(){openModal('Now Playing',`<div id="playerArea"><div class="playerSummary"><div class="playerface">${uiIcon('book',27)}<span>BEREAN STANDARD</span><span>BIBLE</span></div><div class="cent"><h2 id="nowRef" class="nowTitle">Philippians</h2><span id="nowReader" class="nowSource"></span><p id="nowPhase" style="color:var(--accent);font-size:13px;font-weight:750">Ready</p></div></div><div class="progress"><div id="nowProgress" class="progressfill"></div></div><div class="timebar"><span id="nowProgressLabel">Ready</span><span>BSB</span></div><div id="nowReadingArea">${toolbar()}<div id="nowScripture" class="nowScripture"></div></div><div id="playerDock"><div class="transport"><button id="nowBack" aria-label="Previous">${uiIcon('skip-back',23)}</button><button class="mainTransport" id="nowPlay" aria-label="Play or pause"><svg class="ui-icon" viewBox="0 0 24 24" width="21" height="21" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="m8 5 11 7-11 7z"/></svg></button><button id="nowNext" aria-label="Next">${uiIcon('skip-next',23)}</button></div><div class="playerSettings"><button id="nowSpeed" class="speedChip" title="Playback speed">${state.options.speed}× Speed ▾</button></div><div class="quickopts"><button class="pill" id="nowRepeat">${uiIcon('repeat',15)} Repeat</button><button class="pill" id="nowReflect">${uiIcon('timer',15)} Reflect</button><button class="pill" id="nowVoice">${uiIcon('mic',15)} Voice ▾</button></div></div><div id="nowError" class="warn" hidden></div></div>`);$('nowPlay').onclick=toggle;$('nowBack').onclick=()=>skip(-1);$('nowNext').onclick=()=>skip(1);$('nowRepeat').onclick=openSettings;$('nowReflect').onclick=openSettings;$('nowVoice').onclick=openVoice;$('nowSpeed').onclick=openSpeed;wireToolbar($('nowReadingArea'));updatePlayerUI();showPlayerPassage()}
+function closePlaybackAndUpdate(){if(!$('veil').hidden&&modalName==='Now Playing')closeModal();updateMini()}
+function sleepGap(ms){
+  boundaryScheduler.cancel();clearTimeout(player.timer);clearInterval(player.clock);
+  const token=player.token;
+  player.phase='gap';player.gapLeft=ms;player.gapStart=Date.now();audio.pause();
+  player.timer=setTimeout(()=>{if(token!==player.token||player.phase!=='gap')return;clearInterval(player.clock);player.gapLeft=0;nextStep()},ms);
+  player.clock=setInterval(()=>{if(token===player.token&&player.phase==='gap')updatePlayerUI()},350);
+  updatePlayerUI();
+}
+function shouldPause(){if(state.options.reflect==='off')return false;if(state.options.reflect==='verses')return true;const now=player.steps[player.index],next=player.steps[player.index+1];if(state.options.reflect==='reps')return !!next&&now?.group===next?.group;return true;}
+function finishStep(){if(player.phase!=='playing')return;boundaryScheduler.cancel();audio.pause();const specifiedPause=player.steps[player.index]?.item?.pauseSeconds;if(Number.isInteger(specifiedPause)&&specifiedPause>=0){if(specifiedPause>0)sleepGap(specifiedPause*1000);else nextStep();return;}if(state.options.repeat==='verse'&&player.steps[player.index]?.start===player.steps[player.index]?.end){player.phase='gap';sleepGap(state.options.reflect==='off'?50:state.options.pause*1000);player._loopOne=true;return;}if(shouldPause())sleepGap(state.options.pause*1000);else nextStep()}
+function nextStep(){boundaryScheduler.cancel();clearTimeout(player.timer);clearInterval(player.clock);player.gapLeft=0;if(player._loopOne){player._loopOne=false;playStep();return;}player.index++;if(player.index>=player.steps.length){if(['playlist','passage'].includes(state.options.repeat)){player.index=state.options.repeat==='passage'?Math.max(0,player.steps.findIndex(x=>x.group===player.steps[Math.max(0,player.steps.length-1)].group)):0}else{player.phase='complete';updatePlayerUI();return}}playStep()}
+function waitMetadata(){if(audio.readyState>=1)return Promise.resolve();return new Promise((res,rej)=>{const timeout=setTimeout(()=>{clean();rej(Error('Audio timed out'))},12000);const ok=()=>{clean();res()};const err=()=>{clean();rej(Error('Narration file could not load'))};function clean(){clearTimeout(timeout);audio.removeEventListener('loadedmetadata',ok);audio.removeEventListener('error',err)}audio.addEventListener('loadedmetadata',ok);audio.addEventListener('error',err)})}
+async function playStep(){
+  const s=player.steps[player.index];if(!s)return;
+  boundaryScheduler.cancel();clearTimeout(player.timer);clearInterval(player.clock);audio.pause();
+  const token=++player.token;player.phase='loading';player.gapLeft=0;player.pausedFrom=null;player.readerChanged=false;player.label=ref(s);updatePlayerUI();
+  try{
+    const [meta,time]=await Promise.all([chapterData(s.book,s.chapter),timingData(s.book,s.chapter,state.reader)]);
+    if(token!==player.token)return;
+    const a=Array.isArray(time.verses)?time.verses:[];
+    const max=meta.numberOfVerses||a.length;const last=Math.min(s.end,max);
+    const start=Number(a[s.start-1]);const end=last>=a.length?null:Number(a[last]);
+    if(!Number.isFinite(start)||start<0)throw Error('Verse timestamps are not available for this selection');
+    const source=time.audioLink||meta.thisChapterAudioLinks?.[state.reader]||fallbackUrl(s.book,s.chapter,state.reader);
+    if(!source)throw Error('Audio recording not available for this narrator');
+    if(audio.getAttribute('src')!==source){audio.src=source;audio.load()}
+    await waitMetadata();if(token!==player.token)return;
+    player.from=Math.max(0,start);player.to=end??audio.duration;
+    if(!Number.isFinite(player.to)||player.to<=player.from)throw Error('The selected audio range is unavailable');
+    audio.playbackRate=Number(state.options.speed);audio.currentTime=player.from;player.phase='playing';
+    showPlayerPassage();lastHighlightKey='';syncHighlight();
+    if(navigator.mediaSession){try{navigator.mediaSession.metadata=new MediaMetadata({title:ref(s),artist:NAMES[state.reader],album:'Audio Bible · BSB'})}catch{}}
+    if(embeddedSleep.check())return;await audio.play();if(token!==player.token)return;
+    boundaryScheduler.sync();updatePlayerUI();
+  }catch(e){if(token!==player.token)return;boundaryScheduler.cancel();audio.pause();player.phase='error';player.error=e.message||'Could not play recording.';updatePlayerUI()}
+}
+function toggle(){
+  if(['playing','loading','preview'].includes(player.phase)){
+    player.pausedFrom=player.phase;player.token++;boundaryScheduler.cancel();audio.pause();player.phase='paused';updatePlayerUI();return;
+  }
+  if(player.phase==='gap'){
+    player.pausedFrom='gap';player.gapLeft=Math.max(0,player.gapLeft-(Date.now()-player.gapStart));
+    player.token++;boundaryScheduler.cancel();clearTimeout(player.timer);clearInterval(player.clock);player.phase='paused';updatePlayerUI();return;
+  }
+  if(player.phase==='paused'){
+    if(player.readerChanged||player.pausedFrom==='loading'){player.readerChanged=false;return playStep()}
+    if(player.pausedFrom==='gap'){sleepGap(player.gapLeft);return}
+    const token=player.token;
+    player.phase=player.pausedFrom==='preview'?'preview':'playing';
+    if(embeddedSleep.check())return;audio.play().then(()=>{if(token===player.token){boundaryScheduler.sync();updatePlayerUI()}}).catch(e=>{if(token!==player.token)return;boundaryScheduler.cancel();player.phase='error';player.error=e.message;updatePlayerUI()});
+    updatePlayerUI();return;
+  }
+  if(player.phase==='complete'||player.phase==='error')return player.source==='featured'&&player.featuredId?playFeatured(player.featuredId):player.source==='playlist'?startPlaylist():startListen(false);
+  if(player.source==='featured'&&player.featuredId)playFeatured(player.featuredId);else if(player.source==='playlist')startPlaylist();else startListen(false);
+}
+function skip(d){
+  if(!player.steps.length)return;
+  boundaryScheduler.cancel();audio.pause();player.token++;clearTimeout(player.timer);clearInterval(player.clock);
+  player._loopOne=false;player.gapLeft=0;player.index=Math.min(player.steps.length-1,Math.max(0,player.index+d));playStep();
+}
+async function previewVoice(voice,button){
+  if(voice!=='hays')return;
+  resetPlayer();closePlaybackAndUpdate();const token=player.token;const old=button.innerHTML;button.textContent='Loading…';
+  try{
+    const [meta,time]=await Promise.all([chapterData('PHP',2),timingData('PHP',2,voice)]);if(token!==player.token)return;
+    const start=Number(time.verses[18]),end=Number(time.verses[20]);if(!Number.isFinite(start)||!Number.isFinite(end)||end<=start)throw Error('Timing unavailable');
+    const source=time.audioLink||meta.thisChapterAudioLinks?.[voice]||fallbackUrl('PHP',2,voice);
+    audio.src=source;audio.load();await waitMetadata();if(token!==player.token)return;
+    audio.currentTime=start;audio.playbackRate=1;player.phase='preview';player.previewEnd=end;player.previewButton=button;
+    button.innerHTML=uiIcon('pause',16)+' Stop';
+    button.onclick=()=>{if(player.previewButton!==button)return;player.token++;finishVoicePreview();button.innerHTML=old;button.onclick=()=>previewVoice(voice,button)};
+    if(embeddedSleep.check())return;await audio.play();if(token!==player.token)return;boundaryScheduler.sync();
+  }catch(e){if(token!==player.token)return;boundaryScheduler.cancel();audio.pause();player.phase='idle';player.previewEnd=null;button.textContent='Unavailable';const n=document.createElement('div');n.className='warn';n.textContent='Preview could not load: '+e.message+'. You can still open the full audio from OpenBible.';button.closest('.voiceOption').after(n)}
+}
+// timeupdate stays as a fallback and UI/highlight signal, not the only deadline.
+audio.addEventListener('timeupdate',()=>{boundaryScheduler.sync();if(player.phase==='playing'){syncHighlight();updatePlayerUI()}});
+for(const event of ['playing','seeked','ratechange','durationchange','pause','seeking','waiting','stalled','emptied','abort','error'])audio.addEventListener(event,()=>boundaryScheduler.sync());
+document.addEventListener('visibilitychange',()=>boundaryScheduler.sync());
+audio.addEventListener('ended',()=>{if(!audio.ended)return;boundaryScheduler.cancel();if(player.phase==='playing')finishStep();else if(player.phase==='preview')finishVoicePreview()});
+if(navigator.mediaSession){try{navigator.mediaSession.setActionHandler('play',()=>{if(!['playing','loading','gap','preview'].includes(player.phase))toggle()});navigator.mediaSession.setActionHandler('pause',()=>{if(['playing','loading','gap','preview'].includes(player.phase))toggle()});navigator.mediaSession.setActionHandler('nexttrack',()=>skip(1));navigator.mediaSession.setActionHandler('previoustrack',()=>skip(-1));}catch{}}
+$('floatOpen').onclick=openPlayer;$('floatPlay').onclick=toggle;$('tabListen').onclick=()=>{state.tab='listen';render()};$('tabLists').onclick=()=>{playlistSections.mine=false;playlistSections.featured=false;state.tab='playlists';render()};$('themeSwitch').onclick=()=>{state.display.theme=state.display.theme==='dark'?'light':'dark';applyDisplay();save()};$('voiceTop').onclick=openVoice;$('voiceSelect').onchange=e=>setVoice(e.target.value);
+let selectedRange=null,rangeLoad=0;
+const renderPassage=renderListen;
+renderListen=function(){
+ renderPassage();const book=state.book,chapter=state.chapter,token=++rangeLoad;
+ if(selectedRange?.book!==book||selectedRange?.chapter!==chapter)selectedRange=null;
+ const controls=document.createElement('div');controls.className='passage-range';
+ controls.innerHTML='<label>Passage<select id="passage-scope"><option value="chapter">Whole chapter</option><option value="range">Choose verses</option></select></label><div id="range-fields" hidden><label>From verse<select id="range-start" aria-label="From verse"></select></label><label>Through verse<select id="range-end" aria-label="Through verse"></select></label></div><p id="range-message" role="status">Loading verse choices…</p>';
+ embeddedView().querySelector('.hero').before(controls);$('listenPlay').disabled=true;
+ chapterData(book,chapter).then(data=>{
+  if(token!==rangeLoad||book!==state.book||chapter!==state.chapter)return;
+  const count=Number(data.numberOfVerses)||data.chapter?.content?.filter(v=>v.type==='verse').length;
+  if(!Number.isInteger(count)||count<1)throw Error('Verse choices unavailable');
+  const start=$('range-start'),end=$('range-end'),scope=$('passage-scope');if(!start||!end||!scope)return;
+  const options=Array.from({length:count},(_,i)=>'<option value="'+(i+1)+'">'+(i+1)+'</option>').join('');start.innerHTML=options;end.innerHTML=options;
+  scope.value=selectedRange?'range':'chapter';start.value=selectedRange?.start||1;end.value=selectedRange?.end||count;
+  function sync(){if(Number(end.value)<Number(start.value))end.value=start.value;for(const option of end.options)option.disabled=Number(option.value)<Number(start.value);const ranged=scope.value==='range';$('range-fields').hidden=!ranged;selectedRange=ranged?{book,chapter,start:Number(start.value),end:Number(end.value)}:null;$('listenPlay').textContent=ranged?'Listen to '+bname(book)+' '+chapter+':'+start.value+(start.value===end.value?'':'–'+end.value):'Listen to '+bname(book)+' '+chapter;$('range-message').textContent=ranged?'Plays only these verses; repeat settings stay within this passage.':'Plays the whole chapter.';$('listenPlay').disabled=false;}
+  scope.onchange=sync;start.onchange=sync;end.onchange=sync;sync();
+  $('listenPlay').onclick=()=>selectedRange?startSelectedRange({...selectedRange}):startListen(false);
+ }).catch(()=>{if(token!==rangeLoad)return;const message=$('range-message');if(message)message.textContent='Verse choices could not load. Reopen Audio Bible to retry.';});
+};
+async function startSelectedRange(selection){
+ const {book,chapter,start,end}=selection;
+ if(!BOOKS.some(b=>b[0]===book)||!Number.isInteger(chapter)||chapter<1||chapter>bchap(book)||!Number.isInteger(start)||!Number.isInteger(end)||start<1||end<start)return;
+ resetPlayer();player.source='range';const token=player.token;player.label=bname(book)+' '+chapter+':'+start+(end===start?'':'–'+end);openPlayer();
+ try{const data=await chapterData(book,chapter);if(token!==player.token)return;const verses=data.chapter?.content?.filter(v=>v.type==='verse')||[];for(let n=start;n<=end;n++)if(!verses.some(v=>Number(v.number)===n))throw Error('Selected verses are unavailable');const item={id:'range',book,chapter,start,end,reps:1};player.steps=seqFor([item]);player.index=0;await playStep();}catch(error){if(token!==player.token)return;player.phase='error';player.error=error.message;updatePlayerUI();}
+}
+
+// Fresh Listen entry is a chooser, never a restored/default chapter fetch.
+let audioHasSelection=false,audioChooser={book:'',chapter:0,start:1,end:1,range:false},chooserLoad=0;
+function enterAudioBible(){
+ state.tab='listen';
+ if(['idle','complete','error'].includes(player.phase)){audioHasSelection=false;audioChooser={book:'',chapter:0,start:1,end:1,range:false};selectedRange=null;busy++;rangeLoad++;chooserLoad++;}
+ render();
+}
+const renderChosenPassage=renderListen;
+renderListen=function(){if(audioHasSelection)return renderChosenPassage();renderAudioChooser();};
+function renderAudioChooser(){
+ const c=audioChooser,token=++chooserLoad,view=embeddedView();
+ view.innerHTML='<p class="sub">Choose a book, chapter, and the verses you want to read or hear.</p><div class="selectRow"><label>Book<select id="listenBook" aria-label="Choose Bible book"><option value="">Choose a book</option>'+BOOKS.map(b=>'<option value="'+b[0]+'"'+(c.book===b[0]?' selected':'')+'>'+enc(b[1])+'</option>').join('')+'</select></label><label>Chapter<select id="listenChapter" aria-label="Choose chapter" '+(!c.book?'disabled':'')+'><option value="">Choose a chapter</option>'+(c.book?Array.from({length:bchap(c.book)},(_,i)=>'<option value="'+(i+1)+'"'+(c.chapter===i+1?' selected':'')+'>'+(i+1)+'</option>').join(''):'')+'</select></label></div><div class="passage-range"><label>Passage<select id="passage-scope" '+(!c.chapter?'disabled':'')+'><option value="chapter">Whole chapter</option><option value="range">Choose verses</option></select></label><div id="range-fields" hidden><label>From verse<select id="range-start" aria-label="From verse"></select></label><label>Through verse<select id="range-end" aria-label="Through verse"></select></label></div><p id="range-message" role="status">'+(c.chapter?'Loading verse choices…':'Choose a book and chapter to continue.')+'</p></div><div class="split"><button class="btn full" id="showPassage" disabled>Show passage</button><button class="btn primary full" id="listenPlay" disabled>Listen</button></div>';
+ $('listenBook').onchange=e=>{audioChooser={book:e.target.value,chapter:0,start:1,end:1,range:false};render();};
+ $('listenChapter').onchange=e=>{audioChooser={...c,chapter:Number(e.target.value)||0,start:1,end:1,range:false};render();};
+ if(!c.book||!c.chapter)return;
+ chapterData(c.book,c.chapter).then(data=>{
+  if(token!==chooserLoad||audioHasSelection)return;
+  const verses=data.chapter?.content?.filter(v=>v.type==='verse')||[],count=Number(data.numberOfVerses)||verses.length;
+  if(!Number.isInteger(count)||count<1||Array.from({length:count},(_,i)=>i+1).some(n=>!verses.some(v=>Number(v.number)===n)))throw Error('Verse choices unavailable');
+  const start=$('range-start'),end=$('range-end'),scope=$('passage-scope');
+  const options=Array.from({length:count},(_,i)=>'<option value="'+(i+1)+'">'+(i+1)+'</option>').join('');start.innerHTML=options;end.innerHTML=options;start.value=c.start;end.value=c.range?c.end:count;scope.value=c.range?'range':'chapter';
+  function sync(){if(Number(end.value)<Number(start.value))end.value=start.value;for(const o of end.options)o.disabled=Number(o.value)<Number(start.value);c.range=scope.value==='range';c.start=Number(start.value);c.end=Number(end.value);$('range-fields').hidden=!c.range;$('range-message').textContent=c.range?'Only the selected verses will play.':'The whole chapter will play.';$('showPassage').disabled=false;$('listenPlay').disabled=false;$('listenPlay').textContent='Listen to '+bname(c.book)+' '+c.chapter+(c.range?':'+c.start+(c.start===c.end?'':'–'+c.end):'');}
+  scope.onchange=sync;start.onchange=sync;end.onchange=sync;sync();
+  function choose(play){if(token!==chooserLoad)return;state.book=c.book;state.chapter=c.chapter;state.selectedVerse=null;selectedRange=c.range?{book:c.book,chapter:c.chapter,start:c.start,end:c.end}:null;audioHasSelection=true;render();if(play){if(selectedRange)void startSelectedRange({...selectedRange});else void startListen(false);}}
+  $('showPassage').onclick=()=>choose(false);$('listenPlay').onclick=()=>choose(true);
+ }).catch(()=>{if(token!==chooserLoad)return;const m=$('range-message');if(m)m.textContent='Verse choices could not load. Choose the chapter again to retry.';});
+}
+
+// Bound range repeats and replay to the explicit selection; source cue data stays unchanged.
+const publicPreviousNextStep=nextStep;
+nextStep=function(){if(player.source!=='range')return publicPreviousNextStep();boundaryScheduler.cancel();clearTimeout(player.timer);clearInterval(player.clock);player.gapLeft=0;if(player._loopOne){player._loopOne=false;void playStep();return;}player.index++;if(player.index>=player.steps.length){if(state.options.repeat==='passage'){player.index=0;void playStep();return;}player.phase='complete';updatePlayerUI();return;}void playStep();};
+const publicPreviousToggle=toggle;
+toggle=function(){if(player.source==='range'&&['complete','error'].includes(player.phase)){player.index=0;void playStep();return;}return publicPreviousToggle();};
+$('floatPlay').onclick=()=>toggle();$('tabListen').onclick=enterAudioBible;
+document.addEventListener('DOMContentLoaded',()=>{$('aboutAudio').onclick=()=>openModal('About Audio Bible',`<p>Make time in God’s Word part of your everyday life. Listen to the Berean Standard Bible, read along, explore study resources, and create Scripture playlists to revisit at your own pace.</p><p>Choose a whole chapter, one verse, or a passage. Repeat what you want to hear again, leave pauses to recite, and choose full text, first letters, or no text while listening. Barry Hays is the available narrator for this release.</p><p>Study resources include original Tyndale Open Study Notes and Bible Dictionary material, plus BSB-mapped cross-references from CrossReferences.org. Open Sources within Explore this chapter for attribution, licenses, and coverage details.</p><p>Audio streams online. Editable playlists and preferences stay in this browser; download a playlist backup to keep a separate copy. This standalone app does not provide an account, automatic cloud sync, or offline audio storage.</p>`);});
+enterAudioBible();
+
+// Public-only embedded presentation. The original single audio/controller remains intact.
+function embeddedView(){return (state.tab==='playlists'?$('embedded-playlists'):$('embedded-audio'))||$('view');}
+const embeddedOrigin=location.origin;
+let embeddedLastState='',embeddedPendingRange=false,embeddedCompact=false,embeddedLastHeight=0,embeddedHeightFrame=0;
+function embeddedPost(value){if(parent!==window)parent.postMessage(value,embeddedOrigin);}
+function embeddedState(force=false){const step=player.steps[player.index],phase=player.phase;const value={type:'public-memory-audio-state',phase,label:String(player.label||(step?ref(step):'Audio Bible')).slice(0,500),active:['loading','playing','gap','paused','preview'].includes(phase),paused:phase==='paused',canToggle:!embeddedPendingRange};const next=JSON.stringify(value);if(force||next!==embeddedLastState){embeddedLastState=next;embeddedPost(value);}}
+function embeddedHeight(){if(embeddedHeightFrame)return;embeddedHeightFrame=requestAnimationFrame(()=>{embeddedHeightFrame=0;const height=Math.max(200,Math.min(12000,Math.ceil(document.body.getBoundingClientRect().height)));if(height!==embeddedLastHeight){embeddedLastHeight=height;embeddedPost({type:'public-memory-audio-size',height});}});}
+function embeddedReady(){embeddedPost({type:'public-memory-audio-ready'});embeddedState(true);embeddedHeight();}
+const embeddedOriginalMini=updateMini;
+updateMini=function(){embeddedOriginalMini();embeddedState();};
+const embeddedOriginalReset=resetPlayer;
+resetPlayer=function(){embeddedPendingRange=false;return embeddedOriginalReset();};
+// Sleep deadlines are independent of the narration boundary and reflection handles.
+// They are transient: a reload or restore never restarts a timer or narration.
+function createEmbeddedSleepTimer({stop,changed=()=>{},now=Date.now,schedule=setTimeout,cancel=clearTimeout}){
+ let deadline=0,handle=null,generation=0;
+ function clear(){generation++;if(handle!==null)cancel(handle);handle=null;}
+ function remaining(){return deadline?Math.max(0,deadline-now()):0;}
+ function check(){clear();if(!deadline)return false;if(now()>=deadline){deadline=0;stop();changed(0);return true;}changed(remaining());const token=generation;handle=schedule(()=>{if(token===generation)check();},Math.min(1000,remaining()));return false;}
+ function set(minutes){if(![0,15,30,45,60,120].includes(minutes))throw Error('Invalid sleep duration');clear();deadline=minutes?now()+minutes*60000:0;changed(remaining());if(deadline)check();}
+ return {set,check,remaining,cancel:()=>set(0)};
+}
+let embeddedSleepChoice=0,embeddedSleepEnded=false;
+const embeddedSleep=createEmbeddedSleepTimer({stop:()=>{embeddedSleepEnded=true;stop();audio.removeAttribute('src');audio.load();if(navigator.mediaSession)try{navigator.mediaSession.playbackState='none';}catch{}updatePlayerUI();},changed:ms=>{if(!ms)embeddedSleepChoice=0;embeddedSyncSleep();}});
+function embeddedSleepText(){const ms=embeddedSleep.remaining();if(!ms)return embeddedSleepEnded?'Sleep timer finished. Playback stopped.':'';const seconds=Math.ceil(ms/1000);return 'Playback stops in '+Math.floor(seconds/60)+':'+String(seconds%60).padStart(2,'0');}
+function embeddedSyncSleep(){const text=embeddedSleepText();for(const n of document.querySelectorAll('[data-sleep-status]')){n.hidden=!text;n.querySelector('[data-sleep-text]').textContent=text;const cancel=n.querySelector('[data-cancel-sleep]');cancel.hidden=!embeddedSleep.remaining();}for(const n of document.querySelectorAll('[data-sleep]'))n.value=String(embeddedSleepChoice);embeddedHeight();}
+const embeddedOriginalStop=stop;
+stop=function(){embeddedSleep.cancel();embeddedOriginalStop();};
+const embeddedOriginalToggle=toggle;
+toggle=function(){if(embeddedPendingRange||embeddedSleep.check())return;return embeddedOriginalToggle();};
+const embeddedOriginalPlayStep=playStep;
+playStep=function(){if(embeddedSleep.check())return;embeddedSleepEnded=false;return embeddedOriginalPlayStep();};
+const embeddedOriginalPreview=previewVoice;
+previewVoice=function(...args){if(embeddedSleep.check())return;embeddedSleepEnded=false;return embeddedOriginalPreview(...args);};
+const embeddedOriginalGap=sleepGap;
+sleepGap=function(ms){if(embeddedSleep.check())return;return embeddedOriginalGap(ms);};
+// Only a whole chapter can continue to another chapter. Explicit ranges stay bounded.
+const embeddedOriginalNext=nextStep;
+nextStep=function(){
+ if(embeddedSleep.check())return;
+ if(player.source==='range'&&!player._loopOne&&player.index+1>=player.steps.length&&state.options.repeat==='playlist')player.index=-1;
+ if(player.source==='listen'&&!player._loopOne&&player.index+1>=player.steps.length&&state.options.chapterMode!=='stop'&&state.options.repeat==='off'){
+  if(state.options.chapterMode==='repeat'){player.index=-1;return embeddedOriginalNext();}
+  if(state.options.chapterMode==='autoplay'){
+   const step=player.steps[player.index];if(!step)return embeddedOriginalNext();
+   const bi=BOOKS.findIndex(b=>b[0]===step.book),nextChapter=step.chapter<bchap(step.book)?{book:step.book,chapter:step.chapter+1}:BOOKS[bi+1]?{book:BOOKS[bi+1][0],chapter:1}:null;
+   if(nextChapter){state.book=nextChapter.book;state.chapter=nextChapter.chapter;state.selectedVerse=null;selectedRange=null;audioHasSelection=true;return startListen(false);}
+  }
+ }
+ return embeddedOriginalNext();
+};
+if(!['stop','autoplay','repeat'].includes(state.options.chapterMode))state.options.chapterMode='stop';
+if(Number.isInteger(state.studyFont)&&state.studyFont>=16&&state.studyFont<=30)philTextSize=state.studyFont;
+state.studyFont=philTextSize;
+let embeddedSaveError='',embeddedPlaylistSignature=playlistSignature();
+function embeddedStorageWarning(){let note=$('embedded-storage-warning');if(!note){note=document.createElement('p');note.id='embedded-storage-warning';note.className='warn';note.setAttribute('role','status');$('view').before(note);}note.hidden=!embeddedSaveError;note.textContent=embeddedSaveError;embeddedHeight();}
+function embeddedRecordPlaylistMutation(){const signature=playlistSignature();if(signature!==embeddedPlaylistSignature){try{const saved=JSON.parse(localStorage.getItem(key));if(JSON.stringify(saved?.lists)!==JSON.stringify(state.lists))return;}catch{return;}embeddedPlaylistSignature=signature;embeddedPost({type:'public-memory-audio-saved',at:new Date().toISOString()});}}
+save=function(){state.studyFont=philTextSize;try{const raw=JSON.stringify(state);localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Audio save was not confirmed.');embeddedSaveError='';embeddedRecordPlaylistMutation();}catch{embeddedSaveError='Your latest Audio changes have not been saved in this browser. Allow browser storage or free space, then change a setting to retry. A combined backup cannot include these changes until saving succeeds.';}updateBackupStatus();embeddedStorageWarning();};
+function embeddedOptionsHTML(){return `<details class="playback-options"><summary>Playback options</summary><label data-chapter-progression>After this chapter<select data-chapter-mode><option value="stop">Stop after chapter</option><option value="autoplay">Play next chapter</option></select></label><label>Repeat<select data-loop><option value="off">Off</option><option value="verse">Current verse</option><option value="passage">Current passage</option><option value="playlist">Whole playlist</option></select></label><label>Reflect<select data-reflect><option value="off">Off</option><option value="verses">After every verse</option><option value="tracks">After each track</option><option value="reps">Between repetitions</option></select></label><label>Reflection pause<select data-gap>${[0,3,5,10,30,60,120,180,300,600].map(n=>`<option value="${n}">${n} seconds</option>`).join('')}</select></label><label>Speed<select data-speed>${[.5,.75,1,1.25,1.5,1.75,2].map(n=>`<option value="${n}">${n}×</option>`).join('')}</select></label><label>Sleep timer<select data-sleep>${[0,15,30,45,60,120].map(n=>`<option value="${n}">${n===0?'Off':n===120?'2 hours':n+' minutes'}</option>`).join('')}</select></label><p class="playback-help" data-repeat-help></p><p class="playback-help">The sleep timer stops all playback, including repeat, next-chapter playback, and reflection pauses. Change its duration to restart the countdown, or choose Off to cancel.</p></details><p class="sleep-status" data-sleep-status hidden><span data-sleep-text></span><button class="mutebtn" data-cancel-sleep type="button">Cancel timer</button></p>`;}
+function embeddedWireOptions(scope){
+ for(const [attr,key,fallback] of [['chapter-mode','chapterMode','stop'],['loop','repeat','off'],['reflect','reflect','tracks'],['gap','pause',30],['speed','speed',1]]){
+  const select=scope.querySelector('[data-'+attr+']');if(!select)continue;select.value=String(key==='chapterMode'&&state.options.chapterMode==='repeat'?'stop':key==='repeat'&&state.options.chapterMode==='repeat'?'playlist':state.options[key]??fallback);
+  if(key==='pause'&&!Array.from(select.options).some(o=>o.value===select.value)){const option=document.createElement('option');option.value=String(state.options.pause);option.textContent=state.options.pause+' seconds';select.append(option);select.value=option.value;}
+  select.onchange=()=>{state.options[key]=['pause','speed'].includes(key)?Number(select.value):select.value;if(key==='chapterMode'&&select.value==='autoplay')state.options.repeat='off';if(key==='repeat')state.options.chapterMode='stop';audio.playbackRate=state.options.speed;save();for(const options of document.querySelectorAll('.embedded-playback-options'))embeddedWireOptions(options);};
+ }
+ const wholeChapter=player.source==='listen'&&!selectedRange;const progression=scope.querySelector('[data-chapter-progression]');if(progression)progression.hidden=!wholeChapter;
+ const loop=scope.querySelector('[data-loop]');if(loop)loop.querySelector('[value="playlist"]').textContent=wholeChapter?'Whole chapter':player.source==='range'?'Selected passages':'Whole playlist';
+ const help=scope.querySelector('[data-repeat-help]');if(help)help.textContent=wholeChapter?'Repeat and Play next chapter are alternatives; choosing one turns the other off.':'Playback stays within the selected passage or playlist. Chapter autoplay does not apply here.';
+ const timer=scope.querySelector('[data-sleep]');if(timer){timer.value=String(embeddedSleepChoice);timer.onchange=()=>{embeddedSleepChoice=Number(timer.value);embeddedSleepEnded=false;embeddedSleep.set(embeddedSleepChoice);};}
+ const cancel=scope.querySelector('[data-cancel-sleep]');if(cancel)cancel.onclick=()=>{embeddedSleepEnded=false;embeddedSleep.cancel();};embeddedSyncSleep();
+}
+function embeddedAddOptions(host){if(!host||host.querySelector('.embedded-playback-options'))return;const box=document.createElement('div');box.className='embedded-playback-options';box.innerHTML=embeddedOptionsHTML();host.append(box);embeddedWireOptions(box);}
+const embeddedOriginalPlayerUI=updatePlayerUI;
+updatePlayerUI=function(){embeddedOriginalPlayerUI();const button=$('nowPlay');if(button){button.disabled=embeddedPendingRange;button.setAttribute('aria-label',['playing','loading','gap','preview'].includes(player.phase)?'Pause':'Play');}embeddedSyncSleep();};
+const embeddedOriginalOpenPlayer=openPlayer;
+openPlayer=function(){
+ // A compact workspace owns one inline player; opening options must not create a second copy.
+ if(embeddedCompact&&$('embedded-inline-player')&&$('playerArea')&&$('embedded-inline-player').contains($('playerArea'))){updatePlayerUI();return;}
+ embeddedOriginalOpenPlayer();embeddedAddOptions($('playerDock'));
+ if(embeddedCompact&&$('embedded-inline-player')){$('embedded-inline-player').append($('playerArea'));$('veil').hidden=true;modalName='Now Playing';}
+ embeddedHeight();
+};
+openSettings=function(){openPlayer();const options=$('playerArea')?.querySelector('.playback-options');if(options){options.open=true;options.querySelector('summary')?.focus({preventScroll:true});}embeddedHeight();};
+const embeddedShell=$('view');
+embeddedShell.innerHTML='<details class="embedded-section" id="embedded-audio-section"><summary>Audio Bible</summary><div id="embedded-audio"></div></details><details class="embedded-section" id="embedded-playlists-section"><summary>Playlists</summary><div id="embedded-playlists"></div></details>';
+const embeddedOriginalRenderListen=renderListen;
+function embeddedRenderCompact(){const view=$('embedded-audio'),area=$('playerArea');const keep=area&&$('embedded-inline-player')?.contains(area)?area:null;view.innerHTML='<div id="embedded-inline-player"></div>'+((player.steps.length||embeddedPendingRange)?philStudyHTML():'<p class="hint">Listen to the passage selected above.</p>');if(keep)$('embedded-inline-player').append(keep);wirePhilStudy();if(player.steps.length||embeddedPendingRange)openPlayer();}
+renderListen=function(){if(embeddedCompact)embeddedRenderCompact();else{embeddedOriginalRenderListen();const host=$('embedded-audio');if(audioHasSelection){const controls=host.querySelector('.controlsline');if(controls){const button=$('listenOptions');if(button)button.remove();}const hero=host.querySelector('.hero');if(hero){const box=document.createElement('div');box.className='embedded-playback-options';box.innerHTML=embeddedOptionsHTML();hero.after(box);embeddedWireOptions(box);}}}embeddedHeight();};
+render=function(){state.reader='hays';applyDisplay();save();if(state.tab==='playlists'&&!embeddedCompact)renderLists();else renderListen();updateMini();embeddedHeight();};
+// Relabel, but retain, the compatible standalone playlists-only backup controls.
+const embeddedOriginalRenderLists=renderLists;
+renderLists=function(){embeddedOriginalRenderLists();for(const id of ['playlistPrefs','listenOptions']){const button=$(id);if(button)button.textContent='Playback options';}const hint=$('embedded-playlists').querySelector('.backupHint');if(hint)hint.textContent='These controls back up editable playlists only. For playlists, preferences, and Memory progress together, use Back up in More.';embeddedHeight();};
+for(const type of ['pointerdown','focusin','change','input'])document.addEventListener(type,event=>{if(event.target.closest?.('#embedded-audio'))state.tab='listen';else if(event.target.closest?.('#embedded-playlists'))state.tab='playlists';},true);
+for(const [id,tab] of [['embedded-audio-section','listen'],['embedded-playlists-section','playlists']])$(id).addEventListener('toggle',()=>{if($(id).open&&!embeddedCompact){state.tab=tab;render();}embeddedHeight();});
+state.tab='listen';renderListen();state.tab='playlists';renderLists();state.tab='listen';applyDisplay();updateMini();
+function embeddedContext(compact){if(embeddedCompact===compact)return;embeddedCompact=compact;document.documentElement.dataset.compact=String(compact);$('embedded-audio-section').open=true;if(compact){$('embedded-playlists-section').open=false;state.tab='listen';}else if($('playerArea')&&$('embedded-inline-player')?.contains($('playerArea'))){$('playerArea').remove();modalName='';}render();embeddedHeight();}
+function embeddedEntry(){embeddedContext(false);$('embedded-audio-section').open=['loading','playing','gap','paused','preview'].includes(player.phase);$('embedded-playlists-section').open=false;enterAudioBible();}
+const embeddedForbiddenKeys=new Set(['__proto__','prototype','constructor']);
+function embeddedPlain(value){return value!==null&&typeof value==='object'&&!Array.isArray(value)&&[Object.prototype,null].includes(Object.getPrototypeOf(value));}
+function embeddedExact(value,keys){return embeddedPlain(value)&&Object.keys(value).length<=keys.length&&Object.keys(value).every(k=>keys.includes(k)&&!embeddedForbiddenKeys.has(k));}
+function embeddedSafeTree(value){let nodes=0;function visit(v,depth){if(++nodes>150000||depth>12)throw Error('Backup data is too complex.');if(v===null||typeof v==='boolean')return;if(typeof v==='number'){if(!Number.isFinite(v))throw Error('Invalid backup number.');return;}if(typeof v==='string'){if(v.length>20000)throw Error('Backup text is too long.');return;}if(Array.isArray(v)){if(v.length>10000)throw Error('Backup list is too long.');for(const item of v)visit(item,depth+1);return;}if(!embeddedPlain(v))throw Error('Invalid backup object.');const keys=Object.keys(v);if(keys.length>40||keys.some(k=>embeddedForbiddenKeys.has(k)))throw Error('Invalid backup fields.');for(const key of keys)visit(v[key],depth+1);}visit(value,0);if(JSON.stringify(value).length>3000000)throw Error('Backup is too large.');}
+let embeddedValidationContext=null,embeddedRPCQueue=Promise.resolve();
+function embeddedValidator(){if(!embeddedValidationContext)embeddedValidationContext=Promise.all([import('../unified-backup.js'),fetch('../catalog/bible-books.json',{credentials:'same-origin'}).then(r=>{if(!r.ok)throw Error('Bible reference validation is unavailable.');return r.json();})]).then(([module,books])=>({validate:module.validateAudioBackup,books})).catch(error=>{embeddedValidationContext=null;throw error;});return embeddedValidationContext;}
+function embeddedSnapshot(source=state){return {version:1,lists:source.lists,current:source.current??null,options:{repeat:source.options?.repeat,reflect:source.options?.reflect,pause:source.options?.pause,speed:source.options?.speed,chapterMode:source.options?.chapterMode??'stop'},display:{theme:source.display?.theme,font:source.display?.font,mode:source.display?.mode},studyFont:source.studyFont??philTextSize};}
+function embeddedReadSnapshot(){const raw=localStorage.getItem(key);if(raw===null)return embeddedSnapshot();const stored=JSON.parse(raw);embeddedSafeTree(stored);if(!embeddedPlain(stored))throw Error('Saved Audio data is invalid.');return embeddedSnapshot(stored);}
+function embeddedCanonical(value){return JSON.stringify(value,(_,v)=>embeddedPlain(v)?Object.fromEntries(Object.keys(v).sort().map(k=>[k,v[k]])):v);}
+async function embeddedBackupRPC(m){
+ try{
+  const {validate,books}=await embeddedValidator();
+  if(m.action==='backup-export'){if(embeddedSaveError)throw Error('Audio has unsaved changes. Allow browser storage or free space, then change a setting to retry saving before backing up.');const snapshot=embeddedReadSnapshot();embeddedSafeTree(snapshot);const value=validate(snapshot,{books});embeddedPost({type:'public-memory-audio-response',action:m.action,requestId:m.requestId,ok:true,value});return;}
+  embeddedSafeTree(m.backup);const clean=validate(m.backup,{books});
+  if(m.action==='backup-validate'){embeddedPost({type:'public-memory-audio-response',action:m.action,requestId:m.requestId,ok:true,value:{valid:true}});return;}
+  const persisted=validate(embeddedReadSnapshot(),{books});
+  const target={...persisted,...clean,options:{...persisted.options,...(clean.options||{})},display:{...persisted.display,...(clean.display||{})},studyFont:clean.studyFont??persisted.studyFont};
+  if(Object.prototype.hasOwnProperty.call(m,'expected')){embeddedSafeTree(m.expected);const expected=validate(m.expected,{books});if(embeddedCanonical(persisted)!==embeddedCanonical(expected)&&embeddedCanonical(persisted)!==embeddedCanonical(target))throw Error('Audio playlists or settings changed in another tab. Keep the recovery backup and review before retrying.');}
+  const next={...state,lists:target.lists,current:target.current,reader:'hays',selectedVerse:null,options:target.options,display:target.display,studyFont:target.studyFont};
+  // Commit one storage key before touching active playback or in-memory data.
+  // A denied/quota write leaves the existing state and timer untouched.
+  const committed=JSON.stringify(next);localStorage.setItem(key,committed);if(localStorage.getItem(key)!==committed)throw Error('Audio restore could not be confirmed in browser storage. Keep the recovery backup.');
+  stop();state=next;philTextSize=next.studyFont;embeddedSleepEnded=false;embeddedSaveError='';embeddedStorageWarning();closeModal();embeddedRecordPlaylistMutation();const tab=state.tab;state.tab='listen';renderListen();state.tab='playlists';renderLists();state.tab=tab;applyDisplay();philApplyTextSize();updatePlayerUI();embeddedHeight();
+  embeddedPost({type:'public-memory-audio-response',action:m.action,requestId:m.requestId,ok:true,value:{applied:true}});
+ }catch(error){embeddedPost({type:'public-memory-audio-response',action:m.action,requestId:m.requestId,ok:false,error:String(error?.message||'Audio backup could not be processed.').slice(0,300)});}
+}
+window.addEventListener('message',async event=>{
+ if(event.origin!==embeddedOrigin||event.source!==parent||parent===window||!embeddedPlain(event.data)||event.data.type!=='public-memory-audio')return;
+ const m=event.data,only=keys=>embeddedExact(m,['type','action',...keys]);
+ if(['backup-export','backup-validate','backup-apply'].includes(m.action)&&only(m.action==='backup-export'?['requestId']:m.action==='backup-apply'?['requestId','backup','expected']:['requestId','backup'])&&typeof m.requestId==='string'&&/^[A-Za-z0-9_-]{1,80}$/.test(m.requestId)){
+  if(m.action!=='backup-export'&&!Object.prototype.hasOwnProperty.call(m,'backup'))return;
+  embeddedRPCQueue=embeddedRPCQueue.then(()=>embeddedBackupRPC(m));return;
+ }
+ if(m.action==='ping'&&only([])){embeddedReady();return;}
+ if(m.action==='theme'&&only(['theme'])&&['light','dark'].includes(m.theme)){state.display.theme=m.theme;applyDisplay();save();return;}
+ if(m.action==='context'&&only(['compact'])&&typeof m.compact==='boolean'){embeddedContext(m.compact);return;}
+ if(m.action==='entry'&&only([])){embeddedEntry();return;}
+ if(m.action==='stop'&&only([])){embeddedSleepEnded=false;stop();updatePlayerUI();return;}
+ if(m.action==='pause'&&only([])){if(['playing','loading','gap','preview'].includes(player.phase))toggle();return;}
+ if(m.action==='resume'&&only([])){if(player.phase==='paused')toggle();return;}
+ if(m.action==='open'&&only([])){openPlayer();return;}
+ if(m.action!=='play'||!only(['ranges','compact','hideText'])||!Array.isArray(m.ranges)||!m.ranges.length||m.ranges.length>160||(m.compact!==undefined&&typeof m.compact!=='boolean')||(m.hideText!==undefined&&typeof m.hideText!=='boolean'))return;
+ if(m.ranges.some(r=>!embeddedExact(r,['book','chapter','start','end'])||!BOOKS.some(b=>b[0]===r.book)||!Number.isInteger(r.chapter)||r.chapter<1||r.chapter>bchap(r.book)||!Number.isInteger(r.start)||!Number.isInteger(r.end)||r.start<1||r.end<r.start||r.end>176))return;
+ const ranges=m.ranges.map(r=>({book:r.book,chapter:r.chapter,start:r.start,end:r.end}));if(m.compact!==undefined)embeddedContext(m.compact);
+ if(embeddedSleep.check())return;
+ resetPlayer();player.hideText=m.hideText===true;const token=player.token;embeddedSleepEnded=false;embeddedPendingRange=true;player.phase='loading';player.source='range';player.label=ranges.length===1?bname(ranges[0].book)+' '+ranges[0].chapter+':'+ranges[0].start+(ranges[0].end===ranges[0].start?'':'–'+ranges[0].end):'Selected Scripture passage';state.book=ranges[0].book;state.chapter=ranges[0].chapter;state.selectedVerse=null;audioHasSelection=true;selectedRange=ranges.length===1?{...ranges[0]}:null;$('embedded-audio-section').open=true;state.tab='listen';render();openPlayer();
+ try{for(const r of ranges){const d=await chapterData(r.book,r.chapter);if(token!==player.token)return;const verses=d.chapter?.content?.filter(v=>v.type==='verse')||[];for(let n=r.start;n<=r.end;n++)if(!verses.some(v=>v.number===n&&typeof v.text==='string'))throw Error('Selected passage unavailable');}if(embeddedSleep.check()||token!==player.token)return;player.steps=seqFor(ranges.map((r,i)=>({id:'selected-'+i,...r,reps:1})));player.index=0;embeddedPendingRange=false;await playStep();}
+ catch(error){if(token!==player.token)return;embeddedPendingRange=false;player.phase='error';player.error=error.message;updatePlayerUI();}
+});
+for(const type of ['play','pause','ended','error'])audio.addEventListener(type,()=>{if(type==='play')embeddedSleep.check();embeddedState();});
+document.addEventListener('visibilitychange',()=>embeddedSleep.check());
+window.addEventListener('pageshow',()=>embeddedSleep.check());
+window.addEventListener('pagehide',()=>stop());
+if(typeof ResizeObserver!=='undefined'){const observer=new ResizeObserver(embeddedHeight);observer.observe(document.body);}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',embeddedReady,{once:true});else embeddedReady();
+
+</script><footer hidden class="credits" style="max-width:650px;margin:0 auto;padding:0 19px 175px;text-align:center;color:#8297a2;font-size:11px;line-height:1.6">Berean Standard Bible (BSB) · Public Domain (CC0)<p style="font-size:11px;margin:5px 0">Playlists and preferences remain in your browser. Online access is required for streaming.</p><p><button class="mutebtn" id="aboutAudio" type="button">About Audio Bible</button></p></footer></body></html>

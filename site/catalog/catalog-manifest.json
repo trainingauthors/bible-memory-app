@@ -1,0 +1,55 @@
+{
+ "schemaVersion": 1,
+ "catalogId": "public-memory-visitor-selected-v2",
+ "status": "isolated-preparation-not-a-deployment",
+ "runtimeFiles": [
+  "approved-memory-cards.json",
+  "public-stories.json",
+  "bible-books.json",
+  "approved-sources.json",
+  "catalog-manifest.json"
+ ],
+ "memoryCardsFile": "approved-memory-cards.json",
+ "storyPassageMapFile": "public-stories.json",
+ "scriptureBoundsFile": "bible-books.json",
+ "sourcesFile": "approved-sources.json",
+ "counts": {
+  "storyDefinitions": 0,
+  "preselectedVerseDefinitions": 0,
+  "preselectedChapterDefinitions": 0,
+  "summaryDefinitions": 0,
+  "mnemonicPictureDefinitions": 0,
+  "studyBooks": 66,
+  "studyChapters": 1189,
+  "legacyCompatibilityDefinitions": 0
+ },
+ "boundaryReviewStoryNumbers": [],
+ "startupPolicy": {
+  "progress": "Fresh visitor-local state only. No personal records, review history, schedules, notes, ratings, or playlists are imported.",
+  "membership": "No seeded Memory or Story collections for a fresh visitor. Explicit visitor-selected BSB items only; touched former public story IDs retained by bounded migration.",
+  "scripture": "Allow explicit visitor selection of exact BSB verse, passage, or whole chapter; do not prepopulate a private collection.",
+  "summaries": "No summary collection is supplied. A future summary needs an explicitly approved redistributable source or visitor-created content, kept distinct from Scripture.",
+  "images": "No mnemonic or story images are supplied. Do not reuse private photographs, slide pictures, or private cue imagery.",
+  "audio": "Preserve only the five existing standard public featured collections. Do not create public playlists or import private presets."
+ },
+ "missingContentIsIntentional": [
+  "Private mnemonic book pictures and summary cards are not approved public content.",
+  "There is no approved complete public book-summary catalog in this package.",
+  "The complete BSB is not vendored; chapter reading currently requires the existing online source."
+ ],
+ "prohibitedImports": [
+  "private card catalogs",
+  "private mnemonic photographs",
+  "private slide files or links",
+  "private authored summaries",
+  "private database or backups",
+  "personal browser records",
+  "owner identity or authentication bindings",
+  "personal presets or user labels"
+ ],
+ "compatibilityOnly": {
+  "file": "legacy-approved-memory-cards.json",
+  "count": 105,
+  "policy": "Restore or retain only durably referenced former public definitions; catalogVersions alone never seeds visitor content."
+ }
+}
