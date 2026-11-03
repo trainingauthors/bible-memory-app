@@ -2,7 +2,7 @@
 
 A free web app for memorizing Scripture with spaced review. Live example: https://biblememoryapp.pages.dev
 
-- Recite a verse from its reference, with help when you need it: a picture, first letters, or listening.
+- Recite a verse from its reference, with help when you need it: a picture, first letters (type them, or read them with the rest of each word underlined), or listening.
 - Spaced review (FSRS) schedules each verse for the day you are about to forget it.
 - Make your own cards, with words and pictures on the front and back, or import cards from a CSV or an Anki text export.
 - Listen to any chapter of the Berean Standard Bible, read by Barry Hays, with study notes and cross-references.
@@ -43,7 +43,7 @@ Edit the files in `site` directly. The main pieces:
 | `index.html`, `app.js`, `app.css` | The app's screens |
 | `public-memory-api.js` | Saving and loading in the browser (IndexedDB) |
 | `scheduling.js`, `vendor/fsrs.js` | Spaced review |
-| `recall-panel.js` | Recite, first letters and reveal |
+| `recall-panel.js` | Recite, first letters (typed or read) and reveal |
 | `user-cards.js`, `card-import.js`, `card-model.js` | Your own cards and imports |
 | `audio/` | The listening player |
 | `study-data/` | Study notes, dictionary and cross-references |
