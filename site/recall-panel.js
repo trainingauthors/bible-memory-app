@@ -8,9 +8,14 @@ function comparisonHTML(result){return '<p>'+result.correctCount+' of '+result.e
 
 /** The same renderer in both apps. It owns no API, identity, scheduler or receipt. */
 /** `simple` ({picture:{src,alt,onOpen}, onListen, afterReveal}) is the verse screen: it opens on reciting from memory,
- * with Picture, First letters and Listen offered only as help, and reveals one verse at a time. */
+ * with Picture, First letters and Listen offered only as help, and reveals one verse at a time.
+ * `simple.readLetters` adds Read letters: the verse being recited as first letters with the
+ * rest of each word underlined, a share of words filled in (slider), and a tap fills in one word until the next verse. */
 export function mountRecallPanel({root,verses,saved=null,preference=null,drafts:initialDrafts=null,compare,onState=()=>{},onDraft=()=>{},onPreference=()=>{},onPractice=null,onFinishReview=null,isBlocked=()=>false,practiceSaved=false,simple=null}){
  if(!root||!Array.isArray(verses)||!verses.length||verses.some(v=>!v||typeof v.text!=='string')||typeof compare!=='function')throw Error('Load the exact passage before starting recall.');
+ const READ_LEVEL_KEY='scripture-memory:read-letters-level:v1',READ_STOPS=[0,10,25,50,75];
+ let readOn=false,readVerse=-1,readPick=null,readTapped=new Set(),readLevel=0;
+ try{const stored=Number(localStorage.getItem(READ_LEVEL_KEY));if(Number.isInteger(stored)&&stored>=0&&stored<=75&&stored%5===0)readLevel=stored;}catch{}
  let flow=createRecallFlow({verseCount:verses.length,...(saved?{saved}:simple?{method:'oral',scope:'verse'}:preference?preference:{})}),showPicture=false,listenNote='',autoFinished=false,drafts=initialDrafts?clone(initialDrafts):emptyRecallDrafts(verses.length),disposed=false,working=false,savedPractice=practiceSaved,comparison=null,storageWarning='';
  for(const method of ['full','first'])if(typeof drafts[method]?.passage!=='string'||!Array.isArray(drafts[method].verses)||drafts[method].verses.length!==verses.length||drafts[method].verses.some(v=>typeof v!=='string'))throw Error('This recall draft no longer matches the passage.');
  root.classList.add('recall-panel');
@@ -29,6 +34,33 @@ export function mountRecallPanel({root,verses,saved=null,preference=null,drafts:
  function updateDisabled(){if(disposed)return;const view=recallFlowView(flow),lock=working||isBlocked();clearTimeout(recheck);if(lock&&!working)recheck=setTimeout(updateDisabled,200);for(const button of root.querySelectorAll('button'))button.disabled=lock;for(const input of root.querySelectorAll('textarea'))input.disabled=lock;const set=(name,disabled)=>{const n=$('[data-recall-'+name+']');if(n)n.disabled=lock||disabled;};set('next',!view.canNext);set('previous',!view.canPrevious);set('reveal-next',!view.canRevealNext);set('show-all',!view.canShowAll);set('hide',!view.canHide);set('check',!view.canCheck||!inputText().trim());set('practice',savedPractice);set('finish',false);}
  function revealedHTML(view){if(simple)return view.visibleVerseIndices.length?'<div class="recall-verses">'+view.visibleVerseIndices.map(index=>'<p>'+(verses.length>1?'<span class="recall-verse-label">'+escape(recallVerseLabel(verses[index],index))+'</span> ':'')+escape(verses[index].text)+'</p>').join('')+'</div>':'<div class="recall-hidden recall-recite"><strong>Say it from memory.</strong>'+(verses.length>1?'<p>'+verses.length+' verses. Reveal them one at a time.</p>':'')+'</div>';return view.visibleVerseIndices.length?'<div class="recall-verses">'+view.visibleVerseIndices.map(index=>'<p><span class="recall-verse-label">'+escape(recallVerseLabel(verses[index],index))+'</span> '+escape(verses[index].text)+'</p>').join('')+'</div>':'<div class="recall-hidden"><strong>All verses are hidden</strong><p>'+(flow.method==='oral'?'Recite '+escape(recallVerseLabel(verses[view.revealedCount??flow.oralRevealedCount]||verses[0],flow.oralRevealedCount))+ ' from memory.':'Type '+(flow.scope==='verse'?escape(recallVerseLabel(verses[flow.verseIndex],flow.verseIndex)):'the whole passage')+' before checking.')+'</p></div>';}
  function useMethod(method){if(blocked())return;try{flow=advanceRecallFlow(flow,{type:'method',value:method});if(method!=='oral'&&verses.length>1)flow=advanceRecallFlow(flow,{type:'scope',value:'passage'});comparison=null;persist();render();}catch(error){notice(error.message,true);}}
+ // Words keep the answer check's rule (letters and numbers; apostrophes stay inside a word); everything else shows as is.
+ const READ_WORD=/[\p{L}\p{N}]+(?:['’][\p{L}\p{N}]+)*/gu;
+ function readWordsHTML(index){
+  const text=verses[index].text,words=[...text.matchAll(READ_WORD)];
+  if(readVerse!==index){readVerse=index;readTapped=new Set();readPick=null;}
+  // Different words each time a level is picked; they stay put while reading the verse.
+  if(!readPick||readPick.level!==readLevel){const order=words.map((_,i)=>i);for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]];}readPick={level:readLevel,shown:new Set(order.slice(0,Math.round(words.length*readLevel/100)))};}
+  let html='',at=0;
+  words.forEach((match,k)=>{
+   const word=match[0],byLevel=readPick.shown.has(k),shown=byLevel||readTapped.has(k);
+   html+=escape(text.slice(at,match.index));at=match.index+word.length;
+   html+='<button type="button" class="read-word'+(shown?' shown':'')+(readTapped.has(k)?' tapped':'')+'" data-read-word="'+k+'"'+(byLevel?' aria-disabled="true"':'')+' aria-label="'+(shown?escape(word):'Word '+(k+1)+', starts with '+escape(word[0])+'. Tap to show it.')+'">'+(shown?escape(word):escape(word[0])+'<span class="read-rest" aria-hidden="true">'+escape(word.slice(1))+'</span>')+'</button>';
+  });
+  return html+escape(text.slice(at));
+ }
+ const readLevelLabel=()=>readLevel?readLevel+'% of words shown':'First letters only';
+ function readPanelHTML(index){
+  return '<div class="recall-help-panel read-panel"><p class="recall-instruction">Read '+escape(recallVerseLabel(verses[index],index))+'. Tap a word to see it.</p><p class="read-words" data-read-words>'+readWordsHTML(index)+'</p><div class="read-level"><label for="read-level">Words shown: <strong data-read-level-label>'+readLevelLabel()+'</strong></label><input type="range" id="read-level" data-read-level min="0" max="75" step="5" value="'+readLevel+'"><div class="read-stops" role="group" aria-label="Quick picks">'+READ_STOPS.map(stop=>'<button type="button" data-read-stop="'+stop+'" aria-pressed="'+(readLevel===stop)+'">'+(stop?stop+'%':'Letters')+'</button>').join('')+'</div></div></div>';
+ }
+ function setReadLevel(value){
+  if(!Number.isInteger(value)||value<0||value>75||value===readLevel)return;readLevel=value;
+  try{localStorage.setItem(READ_LEVEL_KEY,String(value));}catch{}
+  const words=$('[data-read-words]');if(words&&readVerse>=0)words.innerHTML=readWordsHTML(readVerse);
+  const label=$('[data-read-level-label]');if(label)label.textContent=readLevelLabel();
+  const range=$('[data-read-level]');if(range&&Number(range.value)!==value)range.value=String(value);
+  for(const b of root.querySelectorAll('[data-read-stop]'))b.setAttribute('aria-pressed',String(Number(b.dataset.readStop)===value));
+ }
  function renderSimple(){
   const view=recallFlowView(flow),oral=flow.method==='oral',count=verses.length,shown=view.visibleVerseIndices.length,all=shown===count&&view.canFinishReview;
   if(!all)autoFinished=false;
@@ -39,9 +71,10 @@ export function mountRecallPanel({root,verses,saved=null,preference=null,drafts:
   let html='<div data-recall-revealed>'+revealedHTML(view)+'</div>';
   if(!all){
    if(oral)html+='<button type="button" class="primary full recall-reveal" data-recall-reveal-next>'+reveal+'</button>'+(count>1?'<button type="button" class="text-button" data-recall-show-all>Reveal the whole passage</button>':'');
-   html+='<p class="recall-help-label">Need help?</p><div class="recall-helps" role="group" aria-label="Need help?">'+(simple.picture?help('picture','🖼','Picture',showPicture):'')+help('first','Aa','First letters',flow.method==='first')+(simple.onListen?help('listen','🔊','Listen',!!listenNote):'')+'</div>';
+   html+='<p class="recall-help-label">Need help?</p><div class="recall-helps" role="group" aria-label="Need help?">'+(simple.picture?help('picture','🖼','Picture',showPicture):'')+help('first','Aa','First letters',flow.method==='first')+(simple.readLetters?help('read','A_','Read letters',readOn&&oral):'')+(simple.onListen?help('listen','🔊','Listen',!!listenNote):'')+'</div>';
    if(showPicture&&simple.picture)html+='<div class="recall-help-panel"><button type="button" class="picture" data-recall-picture aria-label="Enlarge memory picture"><img src="'+escape(simple.picture.src)+'" alt="'+escape(simple.picture.alt||'Memory picture')+'"></button><p class="subtle">Tap the picture to enlarge.</p></div>';
    if(listenNote)html+='<p class="subtle recall-listen-note">'+escape(listenNote)+'</p>';
+   if(simple.readLetters&&readOn&&oral&&next<count)html+=readPanelHTML(next);
    // First letters type into an invisible field laid over the words, so each word appears right where you type.
    if(!oral)html+='<div class="recall-help-panel">'+(flow.method==='first'?'<p class="recall-instruction">Tap the box and type the first letter of each word.</p><div class="recall-letter-box"><div class="recall-letters" data-recall-letters aria-live="polite">'+lettersHTML()+'</div><textarea class="recall-letter-input" data-recall-input data-method="first" aria-label="Type the first letter of each word" maxlength="50000" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false"></textarea></div>':'<p class="recall-instruction">Type the '+(count>1?'passage':'verse')+' from memory.</p><label>Your answer<textarea data-recall-input data-method="'+flow.method+'" rows="6" maxlength="50000" autocomplete="off" autocapitalize="off" spellcheck="false"></textarea></label>')+'<div data-recall-comparison></div><div class="recall-actions"><button type="button" class="primary" data-recall-check>Check</button><button type="button" class="secondary" data-recall-method="oral">Back to reciting</button></div></div>';
    else html+='<button type="button" class="text-button" data-recall-method="full">Type it out instead</button>';
@@ -52,10 +85,14 @@ export function mountRecallPanel({root,verses,saved=null,preference=null,drafts:
   root.innerHTML=html+'<p data-recall-status role="status" aria-live="polite"></p>';
   $('[data-recall-reveal-next]')?.addEventListener('click',()=>change({type:'reveal-next'}));
   $('[data-recall-show-all]')?.addEventListener('click',()=>change({type:'show-all'}));
-  $('[data-recall-hide]')?.addEventListener('click',()=>{showPicture=false;listenNote='';if(!oral)useMethod('oral');else change({type:'hide'});});
+  $('[data-recall-hide]')?.addEventListener('click',()=>{showPicture=false;listenNote='';readOn=false;if(!oral)useMethod('oral');else change({type:'hide'});});
   for(const b of root.querySelectorAll('[data-recall-method]'))b.onclick=()=>useMethod(b.dataset.recallMethod);
-  for(const b of root.querySelectorAll('[data-recall-help]'))b.onclick=()=>{const key=b.dataset.recallHelp;if(key==='picture'){showPicture=!showPicture;render();}else if(key==='first')useMethod(flow.method==='first'?'oral':'first');else if(key==='listen')run(async()=>{listenNote='Playing the verse…';render();await simple.onListen();listenNote='Playing the verse. Use the player to pause.';if(!disposed)render();});};
+  for(const b of root.querySelectorAll('[data-recall-help]'))b.onclick=()=>{const key=b.dataset.recallHelp;if(key==='picture'){showPicture=!showPicture;render();}else if(key==='first'){readOn=false;useMethod(flow.method==='first'?'oral':'first');}else if(key==='read'){readOn=!(readOn&&flow.method==='oral');if(flow.method!=='oral')useMethod('oral');else render();}else if(key==='listen')run(async()=>{listenNote='Playing the verse…';render();await simple.onListen();listenNote='Playing the verse. Use the player to pause.';if(!disposed)render();});};
   $('[data-recall-picture]')?.addEventListener('click',()=>simple.picture?.onOpen?.());
+  const readWords=$('[data-read-words]');
+  if(readWords)readWords.onclick=event=>{const b=event.target.closest('[data-read-word]');if(!b||blocked())return;const k=Number(b.dataset.readWord);if(readPick?.shown.has(k))return;if(readTapped.has(k))readTapped.delete(k);else readTapped.add(k);readWords.innerHTML=readWordsHTML(readVerse);readWords.querySelector('[data-read-word="'+k+'"]')?.focus();};
+  const readRange=$('[data-read-level]');if(readRange)readRange.oninput=()=>setReadLevel(Number(readRange.value));
+  for(const b of root.querySelectorAll('[data-read-stop]'))b.onclick=()=>setReadLevel(Number(b.dataset.readStop));
   const input=$('[data-recall-input]');if(input){input.value=inputText();input.oninput=()=>{if(blocked())return;const wasDone=flow.method==='first'&&lettersDone(),text=input.value;if(flow.scope==='verse')drafts[flow.method].verses[flow.verseIndex]=text;else drafts[flow.method].passage=text;try{flow=advanceRecallFlow(flow,{type:'edit'});comparison=null;onDraft({method:flow.method,scope:flow.scope,verseIndex:flow.verseIndex,text});persist();const letters=$('[data-recall-letters]');if(letters)letters.innerHTML=lettersHTML();$('[data-recall-comparison]')?.replaceChildren();updateDisabled();if(flow.method==='first'&&!wasDone&&lettersDone())checkAnswer();}catch(error){notice(error.message,true);}};}
   $('[data-recall-check]')?.addEventListener('click',checkAnswer);
   $('[data-recall-practice]')?.addEventListener('click',()=>run(async()=>{await onPractice();savedPractice=true;const button=$('[data-recall-practice]');if(button)button.textContent='Practice saved';notice('Practice saved. Review schedule unchanged.');}));

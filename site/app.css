@@ -43,3 +43,16 @@ canvas.user-card-picture{width:auto;height:auto}.card-picture-preview canvas{dis
 .shell{padding-bottom:calc(var(--nav-height,110px) + 32px)}
 .audio-active .shell{padding-bottom:calc(var(--nav-height,110px) + 120px)}
 .audio-dock{bottom:calc(var(--nav-height,calc(79px + env(safe-area-inset-bottom))) + 6px)}
+/* Read letters (review help): first letter shown, the rest of the word kept at its real length but underlined only. */
+.read-words{margin:4px 0 14px;font-family:Georgia,"Times New Roman",serif;font-size:19px;line-height:2.2;color:var(--recall-ink)}
+.read-word{display:inline;padding:0 1px;margin:0;border:0;border-bottom:1.5px solid currentColor;border-radius:0;background:none;color:inherit;font:inherit;line-height:inherit;cursor:pointer}
+.read-word.shown{border-bottom-color:transparent}
+.read-word.tapped{color:var(--recall-accent);border-bottom:1.5px dotted var(--recall-accent)}
+.read-word[aria-disabled=true]{cursor:default}
+.read-word:focus-visible{outline:2px solid var(--recall-accent);outline-offset:2px}
+.read-rest{color:transparent}
+.read-level label{display:block;font-size:15px;margin-bottom:6px}
+.read-level input[type=range]{width:100%;accent-color:var(--recall-accent)}
+.read-stops{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-top:8px}
+.read-stops button{min-height:40px;padding:6px 2px;border:1px solid var(--recall-line);border-radius:10px;background:var(--recall-surface);color:inherit;font:inherit;font-size:14px;font-weight:700}
+.read-stops button[aria-pressed=true]{border-color:var(--recall-accent);background:var(--recall-soft)}
